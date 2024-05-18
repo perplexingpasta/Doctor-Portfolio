@@ -1,3 +1,0 @@
-connect frontend to backend
-initialize base repo w git
-have patient data entry form in frontend that submits it to mongodb
