@@ -1,8 +1,8 @@
 import image from "C:\\Rishabh\\code\\REACT\\Dr. Robert Zane v2\\frontend\\figma assets\\Registration.jpg";
 
-const RegistrationForm = () => {
+const Contact = () => {
   return (
-    <div>
+    <div className="pt-52">
       <header className="absolute w-full flex justify-center items-center font-montserrat font-semibold text-3xl leading-normal">
         Patient Info
       </header>
@@ -124,4 +124,4 @@ const RegistrationForm = () => {
   );
 };
 
-export default RegistrationForm;
+export default Contact;

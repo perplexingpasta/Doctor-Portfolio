@@ -8,7 +8,7 @@ export const home = async (req, res) => {
   }
 };
 
-export const register = async (req, res) => {
+export const contact = async (req, res, next) => {
   try {
     console.log(req.body);
     const {
@@ -38,14 +38,13 @@ export const register = async (req, res) => {
       complaints,
     });
 
-    res
-      .status(201)
-      .json({
-        msg: userCreated,
-        token: await userCreated.generateToken(),
-        userId: userCreated._id.toString(),
-      });
+    res.status(201).json({
+      msg: userCreated,
+      token: await userCreated.generateToken(),
+      userId: userCreated._id.toString(),
+    });
   } catch (error) {
     res.status(500).send("Internal Server Error.");
+    next(error);
   }
 };
