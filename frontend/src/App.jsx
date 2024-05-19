@@ -5,8 +5,12 @@ import Home from "./pages/Home/Home";
 const App = () => {
   return (
     <main className="relative">
-      <Nav />
-      <section><Home /></section>
+      <section className="w-full top-0">
+        <Nav />
+      </section>
+      <section>
+        <Home />
+      </section>
       <section className="padding-x padding-t pb-8 bg-black text-white w-full absolute mt-96">
         <Footer />
       </section>

@@ -1,4 +1,5 @@
 import Hero from "./Hero";
+import RegistrationForm from "./RegistrationForm";
 // import KnowTheDoctor from "./KnowTheDoctor";
 // import LocationClinic from "./LocationClinic";
 // import MeetTheTeam from "./MeetTheTeam";
@@ -12,6 +13,7 @@ const Home = () => {
       <Testimonials />
       <MeetTheTeam />
       <LocationClinic /> */}
+      <section className="mt-32"><RegistrationForm /></section>
     </main>
   );
 };

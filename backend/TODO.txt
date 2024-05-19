@@ -1,0 +1,10 @@
+initialize base repo w git ✅
+connect frontend to backend and mongodb
+
+create registration form interface ✅
+put registration section from home page to its own page
+make registration section responsive
+registration form works and submits to mongodb
+
+make navbar netflix style wherein it gets a background on scrolling downwards
+react hot toast for notifications
