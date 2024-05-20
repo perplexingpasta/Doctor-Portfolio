@@ -1,11 +1,17 @@
 initialize base repo w git ✅
-connect frontend to backend and mongodb
+connect frontend to backend and mongodb ✅
 
 create registration form interface ✅
 move registration section from home page to contact page ✅
 make registration section responsive
-registration form works and submits to mongodb
+registration form works and submits to mongodb ✅
 
+in contact page:
+add google maps location ✅
+whatsapp chat suppport ✅
+
+remove images that are loaded w links and instead use local ones
+remove montserrat google font import and use local font instead 
 have underline below links in navbar which tells which page you're on
 make navbar netflix style wherein it gets a background on scrolling downwards
 react hot toast for notifications

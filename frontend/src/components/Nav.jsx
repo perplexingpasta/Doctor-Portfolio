@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/icons/logo.svg";
 import hamburger from "../assets/icons/hamburger.svg";
 import close from "../assets/icons/close.svg";
@@ -47,12 +48,12 @@ const Nav = () => {
         <ul className="flex-1 flex justify-end items-center gap-14 max-lg:hidden">
           {links.map((item) => (
             <li key={item.label}>
-              <a
-                href={item.href}
+              <NavLink
+                to={item.href}
                 className="font-montserrat font-medium leading-normal text-lg text-slate-gray hover:text-coral-red"
               >
                 {item.label}
-              </a>
+              </NavLink>
             </li>
           ))}
         </ul>
