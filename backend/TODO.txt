@@ -10,8 +10,18 @@ in contact page:
 add google maps location ✅
 whatsapp chat suppport ✅
 
+FAQ page ✅
+
+in home page:
+understand the carousel and change a few images ✅
+know the doctor section ✅
+patient testimonial section ✅
+meet the team section
+
 remove images that are loaded w links and instead use local ones
+how to load images faster in webpage
 remove montserrat google font import and use local font instead 
+use alt palaquin or urbanist font along w montserrat or look up fonts that go well w montserrat
 have underline below links in navbar which tells which page you're on
 make navbar netflix style wherein it gets a background on scrolling downwards
 react hot toast for notifications

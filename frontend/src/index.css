@@ -116,12 +116,11 @@
     #b98acc,
     #ee8176,
     #b98acc,
-    #9b59b6 */
-    #a0e9fd, /* Light Blue */
-    #a8e6cf, /* Light Green */
-    #ffb3ba, /* Light Pink */
-    #d4a5a5, /* Light Purple */
-    #ffffba  /* Light Yellow */
+    #9b59b6 */ #a0e9fd,
+    /* Light Blue */ #a8e6cf,
+    /* Light Green */ #ffb3ba,
+    /* Light Pink */ #d4a5a5,
+    /* Light Purple */ #ffffba /* Light Yellow */
   );
   background-size: 500%;
   -webkit-background-clip: text;
@@ -177,39 +176,40 @@
   color: coral
 } */
 
-
 /* FOR WHATSAPP INTEGRATION */
-  /* for desktop */
-  .whatsapp_float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
+/* for desktop */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
 }
 
 .whatsapp-icon {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 
 /* for mobile */
 @media screen and (max-width: 767px) {
-    .whatsapp-icon {
-        margin-top: 10px;
-    }
+  .whatsapp-icon {
+    margin-top: 10px;
+  }
 
-    .whatsapp_float {
-        width: 40px;
-        height: 40px;
-        bottom: 20px;
-        right: 10px;
-        font-size: 22px;
-    }
+  .whatsapp_float {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
+  }
 }
+
+/* MY OWN CLASSES */

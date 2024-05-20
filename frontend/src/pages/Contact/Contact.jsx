@@ -1,5 +1,5 @@
 import { useState } from "react";
-import image from "C:\\Rishabh\\code\\REACT\\Dr. Robert Zane v2\\frontend\\figma assets\\Registration.jpg";
+import registrationImg from '../../assets/contact-us/Registration.jpg'
 
 const Contact = () => {
   const [user, setUser] = useState({
@@ -231,7 +231,7 @@ const Contact = () => {
         {/* IMAGE */}
         <div className="w-1/2">
           <img
-            src={image}
+            src={registrationImg}
             alt="Registration.jpg"
             className="object-cover h-5/6 ml-5"
           />
