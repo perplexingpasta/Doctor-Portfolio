@@ -26,6 +26,7 @@ export const contact = async (req, res, next) => {
     if (userExists) {
       return res.status(400).json({ message: "Email already in use." });
     }
+    // This would've had checked the email if it exists
 
     const userCreated = await User.create({
       firstname,

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import registrationImg from '../../assets/contact-us/Registration.jpg'
+import registrationImg from "../../assets/contact-us/Registration.jpg";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
   const [user, setUser] = useState({
@@ -12,6 +13,42 @@ const Contact = () => {
     phone: "",
     complaints: "",
   });
+
+  const successNotify = () =>
+    toast.success("Successfully submitted!", {
+      duration: 5000,
+      position: "top-right",
+      style: {
+        marginTop: "120px",
+        marginRight: "20px",
+        fontSize: "20px",
+      },
+    });
+
+  const errorNotify = () =>
+    toast.error("Something went wrong!", {
+      duration: 5000,
+      position: "top-right",
+      style: {
+        marginTop: "120px",
+        marginRight: "20px",
+        fontSize: "20px",
+      },
+    });
+
+  const errorNotifyMultiLine = () =>
+    toast(
+      "Your email address already exists in the system. \nPlease use an alternate email address or leave it blank.",
+      {
+        duration: 8000,
+        position: "top-right",
+        style: {
+          marginTop: "10px",
+          marginRight: "20px",
+          fontSize: "18px",
+        },
+      }
+    );
 
   const handleInput = (e) => {
     let name = e.target.name;
@@ -38,19 +75,22 @@ const Contact = () => {
       });
 
       if (response.ok) {
+        successNotify();
         setUser({
           firstname: "",
           lastname: "",
           age: "",
-          gender: "",
+          gender: "male",
           address: "",
           email: "",
           phone: "",
           complaints: "",
         });
         // With this, after submitting the form, the form will be cleared
+      } else {
+        errorNotifyMultiLine();
+        errorNotify();
       }
-
       console.log(response);
     } catch (error) {
       console.log("From contact.jsx", error);
@@ -220,11 +260,15 @@ const Contact = () => {
             * Indicates required fields.
           </p>
           <div className="flex flex-col items-center justify-center">
-            <input
+            <button
               type="submit"
-              value="Submit"
-              className="btn btn-wide ml-5 mt-5 px-12"
-            />
+              value="submit"
+              // onClick={sucessNotify}
+              className="btn btn-wide ml-5 px-12 sm:btn-sm md:btn-md lg:btn-lg"
+            >
+              Submit
+            </button>
+            <Toaster />
           </div>
         </form>
 
@@ -245,9 +289,9 @@ const Contact = () => {
           width="100%"
           height="800"
           style={{ border: "0" }}
-          allowfullscreen=""
+          // allowfullscreen=""
           loading="lazy"
-          referrerPolicy="no-referrer"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
 
