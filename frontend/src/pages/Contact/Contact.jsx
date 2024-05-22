@@ -47,7 +47,7 @@ const Contact = () => {
           marginRight: "20px",
           fontSize: "18px",
         },
-      }
+      },
     );
 
   const handleInput = (e) => {
@@ -98,13 +98,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="pt-44 pb-28">
-      <header className="absolute w-full flex justify-center items-center font-montserrat font-semibold text-4xl">
+    <div className="pb-28 pt-44">
+      <header className="absolute flex w-full items-center justify-center font-montserrat text-4xl font-semibold">
         Contact Us
       </header>
 
       <div className="flex w-full pt-24" onSubmit={handleSubmit}>
-        <form className="pt-12 px-24 w-1/2 font-montserrat font-semibold text-4xl">
+        <form className="w-1/2 px-24 pt-12 font-montserrat text-4xl font-semibold">
           {/* FIRST NAME */}
           <label className="input input-bordered flex items-center gap-2">
             First Name * :
@@ -256,7 +256,7 @@ const Contact = () => {
             />
           </label>
 
-          <p className="font-montserrat text-sm font-medium text-gray-500 ml-6 mt-4">
+          <p className="ml-6 mt-4 font-montserrat text-sm font-medium text-gray-500">
             * Indicates required fields.
           </p>
           <div className="flex flex-col items-center justify-center">
@@ -277,7 +277,7 @@ const Contact = () => {
           <img
             src={registrationImg}
             alt="Registration.jpg"
-            className="object-cover h-5/6 ml-5"
+            className="ml-5 h-5/6 object-cover"
           />
         </div>
       </div>

@@ -4,13 +4,13 @@ import { faqData } from "../../indexArrays";
 /* eslint-disable react/no-unescaped-entities */
 const FAQs = () => {
   return (
-    <div className="pt-44 pb-28">
-      <header className="absolute w-full flex justify-center items-center font-montserrat font-semibold text-4xl ">
+    <div className="pb-28 pt-44">
+      <header className="absolute flex w-full items-center justify-center font-montserrat text-4xl font-semibold ">
         FAQs
       </header>
 
       {/* QUESTIONS AND ANSWERS */}
-      <div className="flex flex-col items-center justify-center mt-20 max-w-[65vw] mx-auto">
+      <div className="mx-auto mt-20 flex max-w-[65vw] flex-col items-center justify-center">
         {/* <div className="mt-6">
           <p className="font-montserrat text-lg font-medium leading-normal text-gray-800">
             Q: Why do we exist?

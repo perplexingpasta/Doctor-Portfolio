@@ -32,6 +32,7 @@ Photos or videos showcasing the doctor's practice and facilities
 
 study nike code for responsiveness and layout at 100% desktop
 design all page and all device layout in figma using grid
+make everything responsive
 
 react hot toast for notifications ✅
 make netflix style navbar ✅
@@ -40,11 +41,9 @@ footer same color as navbar
 what are themes in daisyUI
 check consistency of classNames across all headings and add color too
 add underline under all headings
-remove images that are loaded w links and instead use local ones
 how to load images faster in webpage
 remove montserrat google font import and use local font instead 
 use alt palaquin or urbanist font along w montserrat or look up fonts that go well w montserrat
-make everything responsive
 have underline below links in navbar which tells which page you're on
 make the wesbite accessible
 seo optimisation

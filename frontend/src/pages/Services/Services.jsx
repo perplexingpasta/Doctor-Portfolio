@@ -10,18 +10,18 @@ import {
 
 const Services = () => {
   return (
-    <div className="pt-44 pb-28">
-      <header className="absolute w-full flex justify-center items-center font-montserrat font-semibold text-4xl">
+    <div className="pb-28 pt-44">
+      <header className="absolute flex w-full items-center justify-center font-montserrat text-4xl font-semibold">
         Services
       </header>
-      <div className="flex flex-col items-center justify-center mt-20 max-w-[75vw] mx-auto">
+      <div className="mx-auto mt-20 flex max-w-[75vw] flex-col items-center justify-center">
         <div className="mt-6 font-montserrat font-medium">
-          <p className="leading-normal text-xl text-gray-800">
-            Here are some of the most common ENT services that are available at our
-            clinic.
+          <p className="text-xl leading-normal text-gray-800">
+            Here are some of the most common ENT services that are available at
+            our clinic.
           </p>
           <div>
-            <p className="leading-normal pt-8 font-semibold text-xl text-gray-800">
+            <p className="pt-8 text-xl font-semibold leading-normal text-gray-800">
               Ear Services:
             </p>
             {earServices.map((service, index) => (
@@ -34,7 +34,7 @@ const Services = () => {
           </div>
 
           <div>
-            <p className="leading-normal pt-8 font-semibold text-xl text-gray-800">
+            <p className="pt-8 text-xl font-semibold leading-normal text-gray-800">
               Nose Services:
             </p>
             {noseServices.map((service, index) => (
@@ -47,7 +47,7 @@ const Services = () => {
           </div>
 
           <div>
-            <p className="leading-normal pt-8 font-semibold text-xl text-gray-800">
+            <p className="pt-8 text-xl font-semibold leading-normal text-gray-800">
               Throat Services:
             </p>
             {throatServices.map((service, index) => (
@@ -60,7 +60,7 @@ const Services = () => {
           </div>
 
           <div>
-            <p className="leading-normal pt-8 font-semibold text-xl text-gray-800">
+            <p className="pt-8 text-xl font-semibold leading-normal text-gray-800">
               Head & Neck Services:
             </p>
             {headAndNeckServices.map((service, index) => (
@@ -73,7 +73,7 @@ const Services = () => {
           </div>
 
           <div>
-            <p className="leading-normal pt-8 font-semibold text-xl text-gray-800">
+            <p className="pt-8 text-xl font-semibold leading-normal text-gray-800">
               Additional Services:
             </p>
             {additionalServices.map((service, index) => (
@@ -88,7 +88,7 @@ const Services = () => {
 
         {/* VIDEO SECTION */}
         <div className="mt-32">
-          <header className="w-full flex justify-center items-center font-montserrat font-semibold text-4xl text-gray-900 pb-16">
+          <header className="flex w-full items-center justify-center pb-16 font-montserrat text-4xl font-semibold text-gray-900">
             Common Procedures
           </header>
           <ServiceVideoCard

@@ -2,10 +2,10 @@
 const FAQCard = ({ question, answer }) => {
   return (
     <>
-      <p className="font-montserrat text-lg font-medium leading-normal text-gray-800 mt-6">
+      <p className="mt-6 font-montserrat text-lg font-medium leading-normal text-gray-800">
         Q: {question}
       </p>
-      <p className="font-montserrat text-lg leading-8 font-medium text-gray-500">
+      <p className="font-montserrat text-lg font-medium leading-8 text-gray-500">
         Ans: {answer}
       </p>
     </>

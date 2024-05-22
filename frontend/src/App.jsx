@@ -10,16 +10,16 @@ import PageNotFound from "./PageNotFound/PageNotFound";
 
 const App = () => {
   return (
-    <main className="relative flex flex-col min-h-screen">
+    <main className="relative flex min-h-screen flex-col">
       <BrowserRouter>
-        <section className="w-full fixed top-0 z-20">
+        <section className="fixed top-0 z-20 w-full">
           <Nav />
         </section>
         <section className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
-            
+
             <Route path="/contact" element={<Contact />} />
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/about-us" element={<AboutUs />} />
@@ -28,7 +28,7 @@ const App = () => {
         </section>
       </BrowserRouter>
 
-      <section className="padding-x pt-16 pb-8 bg-black text-white w-full">
+      <section className="padding-x w-full bg-black pb-8 pt-16 text-white">
         <Footer />
       </section>
     </main>

@@ -9,13 +9,14 @@ const PageNotFound = () => {
           <h4 className="font-medium">Page not found</h4>
           <br />
           <p className="text-lg leading-8">
-            Oops! It seems like the page you're trying to access doesn't exist.
+            Oops! It seems like the page you&apos;re trying to access
+            doesn&apos;t exist.
           </p>
           <p className="text-lg">
-            If you believe there's an issue, feel free to report it and we'll
-            look into it.
+            If you believe there&apos;s an issue, feel free to report it and
+            we&apos;ll look into it.
           </p>
-          <div className="flex justify-evenly items-center mt-10 mb-20">
+          <div className="mb-20 mt-10 flex items-center justify-evenly">
             <div className="btns btn">
               <NavLink to="/">return home</NavLink>
             </div>

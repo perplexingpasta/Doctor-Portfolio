@@ -56,41 +56,41 @@
   }
 
   .input {
-    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+    @apply border pl-5 text-base leading-normal text-slate-gray outline-none max-sm:w-full max-sm:rounded-full max-sm:border-slate-gray max-sm:p-5 sm:flex-1 sm:border-none;
   }
 }
 
 @layer utilities {
   .padding {
-    @apply sm:px-16 px-8 sm:py-24 py-12;
+    @apply px-8 py-12 sm:px-16 sm:py-24;
   }
 
   .padding-x {
-    @apply sm:px-16 px-8;
+    @apply px-8 sm:px-16;
   }
 
   .padding-y {
-    @apply sm:py-24 py-12;
+    @apply py-12 sm:py-24;
   }
 
   .padding-l {
-    @apply sm:pl-16 pl-8;
+    @apply pl-8 sm:pl-16;
   }
 
   .padding-r {
-    @apply sm:pr-16 pr-8;
+    @apply pr-8 sm:pr-16;
   }
 
   .padding-t {
-    @apply sm:pt-24 pt-12;
+    @apply pt-12 sm:pt-24;
   }
 
   .padding-b {
-    @apply sm:pb-24 pb-12;
+    @apply pb-12 sm:pb-24;
   }
 
   .info-text {
-    @apply font-montserrat text-slate-gray text-lg leading-7;
+    @apply font-montserrat text-lg leading-7 text-slate-gray;
   }
 }
 

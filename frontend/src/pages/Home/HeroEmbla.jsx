@@ -39,7 +39,10 @@ export function EmblaCarousel() {
 
   return (
     <>
-      <header className={`absolute z-10 mt-80 top-80 mb-0 pb-0 pt-5 left-5 font-montserrat font-black text-[15rem] text-gray-200 ${show && "text_hide"}`}>
+      <header
+        className={`absolute left-5 top-80 z-10 mb-0 mt-80 pb-0 pt-5 font-montserrat text-[15rem] font-black text-gray-200 ${show && "text_hide"}`}
+      >
+        {/* <header className={`absolute z-10 mt-80 top-80 mb-0 pb-0 pt-5 left-5 font-montserrat font-black text-[15rem] text-gray-200 ${show && "text_hide"}`}> */}
         Hey!
       </header>
       <div className="embla" ref={emblaRef}>

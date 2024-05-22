@@ -7,7 +7,7 @@ const ServiceVideoCard = ({
 }) => {
   return (
     <>
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex flex-col items-center justify-center">
         <iframe
           width="1120"
           height="630"
@@ -19,12 +19,12 @@ const ServiceVideoCard = ({
           allowFullScreen
         ></iframe>
       </div>
-      <div className="mb-24 max-w-[58vw] mx-auto">
-        <h3 className="font-montserrat font-bold text-3xl pt-2">{videoName}</h3>
-        <p className="font-montserrat text-xl text-slate-gray leading-normal">
+      <div className="mx-auto mb-24 max-w-[58vw]">
+        <h3 className="pt-2 font-montserrat text-3xl font-bold">{videoName}</h3>
+        <p className="font-montserrat text-xl leading-normal text-slate-gray">
           <span className="font-semibold">Description:</span> {videoDesc}
         </p>
-        <p className="font-montserrat text-xl text-slate-gray leading-normal">
+        <p className="font-montserrat text-xl leading-normal text-slate-gray">
           <span className="font-semibold">Common Indications:</span>{" "}
           {commonIndications}
         </p>

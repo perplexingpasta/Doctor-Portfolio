@@ -137,7 +137,8 @@ export const faqData = [
   },
   {
     question: "What are the common symptoms of sinusitis?",
-    answer: "Common symptoms of sinusitis include facial pain or pressure, nasal congestion, nasal discharge (which may be yellow or green), reduced sense of smell, and cough. You might also experience headache, fever, bad breath, and fatigue. If you have these symptoms for more than a week, it's a good idea to see an ENT specialist."
+    answer:
+      "Common symptoms of sinusitis include facial pain or pressure, nasal congestion, nasal discharge (which may be yellow or green), reduced sense of smell, and cough. You might also experience headache, fever, bad breath, and fatigue. If you have these symptoms for more than a week, it's a good idea to see an ENT specialist.",
   },
   {
     question: "How can I prevent ear infections?",
@@ -180,7 +181,8 @@ export const faqData = [
       "A tonsillectomy is the surgical removal of the tonsils, which are two small glands located at the back of the throat. It is usually recommended for individuals who have frequent episodes of tonsillitis, chronic tonsillitis, or enlarged tonsils that cause breathing difficulties or obstructive sleep apnea. The procedure can help reduce the frequency and severity of throat infections and improve overall health.",
   },
   {
-    question: "What should I expect during my first visit to an ENT specialist?",
+    question:
+      "What should I expect during my first visit to an ENT specialist?",
     answer:
       "During your first visit, the ENT specialist will take a detailed medical history, ask about your symptoms, and perform a physical examination of your ears, nose, and throat. They may use specialized instruments to look inside your ears, nose, and throat, and may recommend further tests such as hearing tests, imaging studies, or allergy testing to make an accurate diagnosis and develop a treatment plan.",
   },

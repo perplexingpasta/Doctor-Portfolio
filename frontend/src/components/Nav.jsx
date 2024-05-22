@@ -47,26 +47,26 @@ const Nav = () => {
 
   return (
     <header className={`padding-x absolute z-10 w-full ${show && "nav_black"}`}>
-      <nav className="flex justify-between items-center max-container">
-        <a href="/" className="px-0 py-3 flex">
+      <nav className="max-container flex items-center justify-between">
+        <a href="/" className="flex px-0 py-3">
           <img src={logo} alt="Header Logo" width={70} height={70} />
 
           <div className="px-5 font-montserrat text-gray-200">
-            <h3 className="font-semibold text-3xl leading-normal py-0 mb-0 pt-3">
+            <h3 className="mb-0 py-0 pt-3 text-3xl font-semibold leading-normal">
               Dr. Robert Zane
             </h3>
-            <h3 className="font-montserrat font-light text-[18px] text-gray-300 leading-normal pb-3">
+            <h3 className="pb-3 font-montserrat text-[18px] font-light leading-normal text-gray-300">
               Tumbleweed eye baby
             </h3>
           </div>
         </a>
 
-        <ul className="flex-1 flex justify-end items-center gap-14 max-lg:hidden">
+        <ul className="flex flex-1 items-center justify-end gap-14 max-lg:hidden">
           {links.map((item) => (
             <li key={item.label}>
               <NavLink
                 to={item.href}
-                className="font-montserrat font-medium leading-normal text-lg text-gray-300 hover:text-coral-red"
+                className="font-montserrat text-lg font-medium leading-normal text-gray-300 hover:text-coral-red"
               >
                 {item.label}
               </NavLink>
@@ -75,20 +75,20 @@ const Nav = () => {
         </ul>
 
         {/* HAMBURGER FUNCTIONALITY */}
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="flex flex-1 items-center justify-end sm:hidden">
           <img
             src={toggle ? close : hamburger}
             alt="Hamburger Menu"
-            className="w-[28px] h-[28px] object-contain mr-4"
+            className="mr-4 h-[28px] w-[28px] object-contain"
             onClick={() => setToggle((prev) => !prev)}
           />
 
           <div
             className={`${
               toggle ? "flex" : "hidden"
-            } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+            } bg-black-gradient sidebar absolute right-0 top-20 mx-4 my-2 min-w-[140px] rounded-xl p-6`}
           >
-            <ul className="list-none flex flex-col justify-end items-start flex-1 gap-6">
+            <ul className="flex flex-1 list-none flex-col items-start justify-end gap-6">
               {links.map((item) => (
                 <li key={item.label}>
                   <a
@@ -103,8 +103,8 @@ const Nav = () => {
           </div>
         </div>
       </nav>
-      <div className="flex flex-1 justify-center items-center">
-        <div className="divider divider-warning mt-0 mb-0 h-0 w-[90vw] "></div>
+      <div className="flex flex-1 items-center justify-center">
+        <div className="divider divider-warning mb-0 mt-0 h-0 w-[90vw] "></div>
       </div>
     </header>
   );
