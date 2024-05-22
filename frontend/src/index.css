@@ -213,3 +213,32 @@
 }
 
 /* MY OWN CLASSES */
+.nav_black {
+  background-color: #222831;
+  transition-timing-function: ease-in;
+  transition: all 1s;
+}
+
+.text_hide {
+  opacity: 0;
+  transition: all 1s ease-in;
+  visibility: hidden;
+}
+/* 
+.divider-primary {
+  color: white;
+  background-color: white;
+  fill: white;
+} */
+
+/* EMBLA CLASSES */
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}

@@ -17,7 +17,7 @@ const Services = () => {
       <div className="flex flex-col items-center justify-center mt-20 max-w-[75vw] mx-auto">
         <div className="mt-6 font-montserrat font-medium">
           <p className="leading-normal text-xl text-gray-800">
-            Here are some of the most common ENT services that are available at my
+            Here are some of the most common ENT services that are available at our
             clinic.
           </p>
           <div>

@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/icons/logo.svg";
+import logo from "../assets/icons/logowhite.svg";
 import hamburger from "../assets/icons/hamburger.svg";
 import close from "../assets/icons/close.svg";
 
@@ -29,20 +29,36 @@ const Nav = () => {
     },
   ];
 
+  const [show, setShow] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="padding-x absolute z-10 w-full">
+    <header className={`padding-x absolute z-10 w-full ${show && "nav_black"}`}>
       <nav className="flex justify-between items-center max-container">
         <a href="/" className="px-0 py-3 flex">
           <img src={logo} alt="Header Logo" width={70} height={70} />
 
-        <div className="px-5">
-          <h3 className="font-montserrat font-semibold text-3xl leading-normal py-0 mb-0 pt-3">
-            Dr. Robert Zane
-          </h3>
-          <h3 className="font-montserrat font-light text-[18px] leading-normal pb-3">
-            Tumbleweed eye baby
-          </h3>
-        </div> 
+          <div className="px-5 font-montserrat text-gray-200">
+            <h3 className="font-semibold text-3xl leading-normal py-0 mb-0 pt-3">
+              Dr. Robert Zane
+            </h3>
+            <h3 className="font-montserrat font-light text-[18px] text-gray-300 leading-normal pb-3">
+              Tumbleweed eye baby
+            </h3>
+          </div>
         </a>
 
         <ul className="flex-1 flex justify-end items-center gap-14 max-lg:hidden">
@@ -50,7 +66,7 @@ const Nav = () => {
             <li key={item.label}>
               <NavLink
                 to={item.href}
-                className="font-montserrat font-medium leading-normal text-lg text-slate-gray hover:text-coral-red"
+                className="font-montserrat font-medium leading-normal text-lg text-gray-300 hover:text-coral-red"
               >
                 {item.label}
               </NavLink>
@@ -87,7 +103,9 @@ const Nav = () => {
           </div>
         </div>
       </nav>
-      <div className="divider mt-0 mb-0 h-0"></div>
+      <div className="flex flex-1 justify-center items-center">
+        <div className="divider divider-warning mt-0 mb-0 h-0 w-[90vw] "></div>
+      </div>
     </header>
   );
 };

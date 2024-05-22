@@ -1,16 +1,21 @@
-import Hero from "./Hero";
+// import Hero from "./Hero";
 import KnowTheDoctor from "./KnowTheDoctor";
 import Testimonials from "./Testimonials";
-// import LocationClinic from "./LocationClinic";
-// import MeetTheTeam from "./MeetTheTeam";
+import MeetTheTeam from "./MeetTheTeam";
+import VisitUs from "./VisitUs";
+import { EmblaCarousel } from "./HeroEmbla";
 
 const Home = () => {
   return (
     <main className="relative pb-28">
+      <section>
+        <EmblaCarousel />
+      </section>
 
+      {/* OLD CAROUSEL WITH BUTTONS AND NO AUTOTIMER
       <section>
         <Hero />
-      </section>
+      </section> */}
 
       <section className="padding">
         <KnowTheDoctor />
@@ -19,9 +24,14 @@ const Home = () => {
       <section className="padding bg-gray-200">
         <Testimonials />
       </section>
-      
-      {/* <MeetTheTeam />
-      <LocationClinic />  */}
+
+      <section className="padding">
+        <MeetTheTeam />
+      </section>
+
+      <section className="padding">
+        <VisitUs />
+      </section>
     </main>
   );
 };

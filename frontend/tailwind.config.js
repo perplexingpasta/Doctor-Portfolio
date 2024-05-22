@@ -14,15 +14,12 @@ export default {
       "8xl": ["96px", "106px"],
     },
     extend: {
-      height: {
-        "50vh": "50vh",
-      },
       fontFamily: {
         palanquin: ["Palanquin", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
-        primary: "#ECEEFF",
+        primary: "#ffffff",
         "coral-red": "#FF6452",
         "slate-gray": "#6D6D6D",
         "pale-blue": "#F5F6FF",

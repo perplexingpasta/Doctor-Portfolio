@@ -13,22 +13,44 @@ FAQ page ✅
 refactor FAQ page to use array and map over it ✅
 
 in home page:
-understand the carousel and change a few images ✅
+complete carousel ✅
 know the doctor section ✅
 patient testimonial section ✅
-meet the team section
+meet the team section ✅
+visit us ✅
+refactor hero to use card ✅
 
 in services page:
 map all services from an array ✅
 embed yt videos ✅
 
+in about-us page:
+Information about the doctor's approach to patient care and philosophy  
+add accolades/ certifications/ degree
+staff introduction
+Photos or videos showcasing the doctor's practice and facilities
+
+study nike code for responsiveness and layout at 100% desktop
+design all page and all device layout in figma using grid
+
 react hot toast for notifications ✅
+make netflix style navbar ✅
+divider color 
+footer same color as navbar
+what are themes in daisyUI
 check consistency of classNames across all headings and add color too
 add underline under all headings
 remove images that are loaded w links and instead use local ones
 how to load images faster in webpage
 remove montserrat google font import and use local font instead 
 use alt palaquin or urbanist font along w montserrat or look up fonts that go well w montserrat
-make all sections responsive
+make everything responsive
 have underline below links in navbar which tells which page you're on
-make navbar netflix style wherein it gets a background on scrolling downwards
+make the wesbite accessible
+seo optimisation
+
+
+SITE INFO:
+navbar bg color:  #222831;
+colors used: text-gray-800 and text-gray-500
+font used: montserrat and 

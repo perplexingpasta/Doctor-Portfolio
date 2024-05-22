@@ -12,7 +12,7 @@ const App = () => {
   return (
     <main className="relative flex flex-col min-h-screen">
       <BrowserRouter>
-        <section className="w-full top-0">
+        <section className="w-full fixed top-0 z-20">
           <Nav />
         </section>
         <section className="flex-grow">
