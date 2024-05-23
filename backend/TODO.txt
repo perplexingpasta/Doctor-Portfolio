@@ -38,10 +38,13 @@ responsive:
 footer ✅
 faq page ✅
 services page ✅
+home page ✅
 
 
 react hot toast for notifications ✅
 make netflix style navbar ✅
+add carousel and star rating in reviews section
+don't make a services page rather make services a dropdown and those will be individual pages
 divider color and navbar color in other pages
 there occurs loading when a page is accessed from hamburger, fix that
 hamburger icon color and dialog theme is not right

@@ -89,9 +89,9 @@
     @apply pb-12 sm:pb-24;
   }
 
-  .info-text {
+  /* .info-text {
     @apply font-montserrat text-lg leading-7 text-slate-gray;
-  }
+  } */
 }
 
 /* FOR 404 PAGE NOT FOUND */

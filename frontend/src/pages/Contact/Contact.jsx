@@ -184,14 +184,14 @@ const Contact = () => {
             </div>
             <div className="form-control">
               <label className="label cursor-pointer">
-                <span className="px-1">Transgender </span>
+                <span className="px-1">Other </span>
                 <input
                   type="radio"
                   name="gender"
                   id="gender"
                   className="radio checked:bg-purple-500"
-                  value="transgender"
-                  checked={user.gender === "transgender"}
+                  value="other"
+                  checked={user.gender === "other"}
                   onChange={handleInput}
                 />
               </label>
@@ -248,6 +248,7 @@ const Contact = () => {
               type="text"
               className="grow"
               placeholder="Fever and headache for 3 days"
+
               required
               name="complaints"
               id="complaints"
