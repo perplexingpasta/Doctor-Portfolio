@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ScrollToTop from "../src/components/ScrollToTop";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Home from "./pages/Home/Home";
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <main className="relative flex min-h-screen flex-col">
       <BrowserRouter>
+        <ScrollToTop />
         <section className="fixed top-0 z-20 w-full">
           <Nav />
         </section>
@@ -19,18 +21,16 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
-
             <Route path="/contact" element={<Contact />} />
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </section>
+        <section className="padding-x w-full bg-gray-900 pb-8 pt-16 text-white">
+          <Footer />
+        </section>
       </BrowserRouter>
-
-      <section className="padding-x w-full bg-black pb-8 pt-16 text-white">
-        <Footer />
-      </section>
     </main>
   );
 };

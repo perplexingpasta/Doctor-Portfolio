@@ -1,16 +1,26 @@
 import { useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import img1 from "../../assets/home/hero-carousel-images/imgDark1.jpg";
-import img2 from "../../assets/home/hero-carousel-images/imgDark2.jpg";
-import img3 from "../../assets/home/hero-carousel-images/imgDark3.jpg";
-import img4 from "../../assets/home/hero-carousel-images/imgDark4.jpg";
-import img5 from "../../assets/home/hero-carousel-images/imgDark5.jpg";
-import img6 from "../../assets/home/hero-carousel-images/imgDark6.jpg";
-import img7 from "../../assets/home/hero-carousel-images/imgDark7.jpg";
-import img8 from "../../assets/home/hero-carousel-images/imgDark8.jpg";
-import img9 from "../../assets/home/hero-carousel-images/imgDark9.jpg";
-import img10 from "../../assets/home/hero-carousel-images/imgDark10.jpg";
+import img1 from "../../assets/home/hero-carousel-images/imgLight1.jpg";
+import img2 from "../../assets/home/hero-carousel-images/imgLight2.jpg";
+import img3 from "../../assets/home/hero-carousel-images/imgLight3.jpg";
+import img4 from "../../assets/home/hero-carousel-images/imgLight4.jpg";
+import img5 from "../../assets/home/hero-carousel-images/imgLight5.jpg";
+import img6 from "../../assets/home/hero-carousel-images/imgLight6.jpg";
+import img7 from "../../assets/home/hero-carousel-images/imgLight7.jpg";
+import img8 from "../../assets/home/hero-carousel-images/imgLight8.jpg";
+import img9 from "../../assets/home/hero-carousel-images/imgLight9.jpg";
+import img10 from "../../assets/home/hero-carousel-images/imgLight10.jpg";
+// import img1 from "../../assets/home/hero-carousel-images/imgDark1.jpg";
+// import img2 from "../../assets/home/hero-carousel-images/imgDark2.jpg";
+// import img3 from "../../assets/home/hero-carousel-images/imgDark3.jpg";
+// import img4 from "../../assets/home/hero-carousel-images/imgDark4.jpg";
+// import img5 from "../../assets/home/hero-carousel-images/imgDark5.jpg";
+// import img6 from "../../assets/home/hero-carousel-images/imgDark6.jpg";
+// import img7 from "../../assets/home/hero-carousel-images/imgDark7.jpg";
+// import img8 from "../../assets/home/hero-carousel-images/imgDark8.jpg";
+// import img9 from "../../assets/home/hero-carousel-images/imgDark9.jpg";
+// import img10 from "../../assets/home/hero-carousel-images/imgDark10.jpg";
 import { HeroEmblaCard } from "./HeroCard";
 
 export function EmblaCarousel() {
@@ -40,7 +50,7 @@ export function EmblaCarousel() {
   return (
     <>
       <header
-        className={`absolute left-5 top-80 z-10 mb-0 mt-80 pb-0 pt-5 font-montserrat text-[15rem] font-black text-gray-200 ${show && "text_hide"}`}
+        className={`absolute left-5 top-80 z-10 mb-0 mt-80 pb-0 pt-5 font-montserrat text-[15rem] font-black text-gray-700 ${show && "text_hide"}`}
       >
         Hey!
       </header>

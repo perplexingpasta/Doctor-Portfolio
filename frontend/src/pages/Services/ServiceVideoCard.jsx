@@ -25,7 +25,7 @@ const ServiceVideoCard = ({
           {videoName}
         </h3>
 
-        <div className="text-sm text-slate-gray md:leading-relaxed md:text-lg lg:text-xl">
+        <div className="text-sm text-slate-gray dark:text-gray-400  md:leading-relaxed md:text-lg lg:text-xl">
           <p className="lg:pb-2">
             <span className="font-semibold">Description:</span> {videoDesc}
           </p>

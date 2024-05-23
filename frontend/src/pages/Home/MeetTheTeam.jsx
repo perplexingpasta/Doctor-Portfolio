@@ -5,10 +5,10 @@ const MeetTheTeam = () => {
     <div className="flex w-full flex-col-reverse font-montserrat md:flex-row md:pt-16">
       {/* TEXT ELEMENT */}
       <div className="flex flex-col items-center justify-center pt-6 md:w-1/2 md:pr-8 lg:px-40 lg:py-32">
-        <header className="text-2xl font-semibold text-gray-800 md:text-4xl">
+        <header className="text-2xl font-semibold text-gray-800 dark:text-gray-200 md:text-4xl">
           Meet the team!
         </header>
-        <p className="w-full pt-2 font-normal text-gray-500 md:pt-5 md:text-2xl md:leading-normal">
+        <p className="w-full pt-2 font-normal text-gray-500 dark:text-gray-400 md:pt-5 md:text-2xl md:leading-normal">
           This is the amazing team that&apos;s gonna take care of your every
           whim and be at your beck and call whenever you come for a checkup!
         </p>

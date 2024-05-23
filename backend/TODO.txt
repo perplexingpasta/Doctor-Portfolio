@@ -30,42 +30,42 @@ add accolades/ certifications/ degree
 staff introduction
 Photos or videos showcasing the doctor's practice and facilities
 
-study nike code for responsiveness and layout at 100% desktop
-design all page and all device layout in figma using grid
-make everything responsive
-
 responsive:
 footer ✅
 faq page ✅
 services page ✅
 home page ✅
 
-
 react hot toast for notifications ✅
 make netflix style navbar ✅
-add carousel and star rating in reviews section
-don't make a services page rather make services a dropdown and those will be individual pages
-divider color and navbar color in other pages
-there occurs loading when a page is accessed from hamburger, fix that
-hamburger icon color and dialog theme is not right
-hamburger doesn't come on for md devices
-add router to hamburger links
-footer links are dead; revive by router
+footer links are dead; revive by router ✅
+scrolltop functionality ✅
+remove montserrat google font import and use local font instead ✅ 
+hamburger doesn't come on for md devices ✅
+add router to hamburger links ✅
+hamburger color issue with navbar scroll ✅
+footer same color as navbar ✅
 
-footer same color as navbar
-what are themes in daisyUI
+divider color and navbar color in other pages
+add carousel and star rating in reviews section
+finish implementing dark mode
+
+make bg kinda beige for light mode setting
 check consistency of classNames across all headings and add color too
 add underline under all headings
-how to load images faster in webpage
-remove montserrat google font import and use local font instead 
 use alt palaquin or urbanist font along w montserrat or look up fonts that go well w montserrat
 have underline below links in navbar which tells which page you're on
+
+how to load images faster in webpage
 the youtube videos in services page are squarish
+don't make a services page rather make services a dropdown and those will be individual pages
 make the wesbite accessible
 seo optimisation
 
 
 SITE INFO:
 navbar bg color:  #222831;
-colors used: text-gray-800 and text-gray-500
-font used: montserrat and 
+text colors used: 
+  light-mode: text-gray-800 and text-gray-500
+  dark-mode: text-gray-200 and text-gray-400
+font used: montserrat and palanquin

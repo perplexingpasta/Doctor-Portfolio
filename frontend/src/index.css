@@ -1,11 +1,10 @@
-/* FROM NIKE */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import './fonts.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* FROM NIKE */
 * {
   margin: 0;
   padding: 0;
@@ -215,9 +214,10 @@
 /* MY OWN CLASSES */
 .nav_black {
   /* previous bluish gray color: #222831 */
-  background-color: #000;
+  /* background-color: #000; */
   transition-timing-function: ease-in;
   transition: all 1s;
+  @apply bg-gray-900 
 }
 
 

@@ -19,14 +19,14 @@ const Services = () => {
         <div className="mt-6 font-normal">
           <p
             className="text-base leading-normal
-           text-gray-800 md:text-lg lg:text-xl"
+           text-gray-800 md:text-lg lg:text-xl dark:text-gray-200"
           >
             Here are some of the most common ENT services that are available at
             our clinic.
           </p>
 
           <div>
-            <p className="pt-4 pb-1 text-base font-semibold text-gray-800 md:pt-6 md:text-lg lg:pt-8 lg:text-xl">
+            <p className="pb-1 pt-4 text-base font-semibold text-gray-800 md:pt-6 md:text-lg lg:pt-8 lg:text-xl dark:text-gray-200">
               Ear Services:
             </p>
             {earServices.map((service, index) => (
@@ -39,7 +39,7 @@ const Services = () => {
           </div>
 
           <div>
-            <p className="pt-4 pb-1 text-base font-semibold text-gray-800 md:pt-6 md:text-lg lg:pt-8 lg:text-xl">
+            <p className="pb-1 pt-4 text-base font-semibold text-gray-800 md:pt-6 md:text-lg lg:pt-8 lg:text-xl dark:text-gray-200">
               Nose Services:
             </p>
             {noseServices.map((service, index) => (
@@ -52,7 +52,7 @@ const Services = () => {
           </div>
 
           <div>
-            <p className="pt-4 pb-1 text-base font-semibold text-gray-800 md:pt-6 md:text-lg lg:pt-8 lg:text-xl">
+            <p className="pb-1 pt-4 text-base font-semibold text-gray-800 md:pt-6 md:text-lg lg:pt-8 lg:text-xl dark:text-gray-200">
               Throat Services:
             </p>
             {throatServices.map((service, index) => (
@@ -65,7 +65,7 @@ const Services = () => {
           </div>
 
           <div>
-            <p className="pt-4 pb-1 text-base font-semibold text-gray-800 md:pt-6 md:text-lg lg:pt-8 lg:text-xl">
+            <p className="pb-1 pt-4 text-base font-semibold text-gray-800 md:pt-6 md:text-lg lg:pt-8 lg:text-xl dark:text-gray-200">
               Head & Neck Services:
             </p>
             {headAndNeckServices.map((service, index) => (
@@ -78,7 +78,7 @@ const Services = () => {
           </div>
 
           <div>
-            <p className="pt-4 pb-1 text-base font-semibold text-gray-800 md:pt-6 md:text-lg lg:pt-8 lg:text-xl">
+            <p className="pb-1 pt-4 text-base font-semibold text-gray-800 md:pt-6 md:text-lg lg:pt-8 lg:text-xl dark:text-gray-200">
               Additional Services:
             </p>
             {additionalServices.map((service, index) => (
