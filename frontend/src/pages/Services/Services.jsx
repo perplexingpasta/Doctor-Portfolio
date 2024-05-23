@@ -10,18 +10,23 @@ import {
 
 const Services = () => {
   return (
-    <div className="pb-28 pt-44">
-      <header className="absolute flex w-full items-center justify-center font-montserrat text-4xl font-semibold">
+    <div className="pb-16 pt-28 font-montserrat md:pb-28 md:pt-40 lg:pt-44">
+      <header className="flex w-full items-center justify-center text-[2.2rem] font-semibold lg:text-4xl ">
         Services
       </header>
-      <div className="mx-auto mt-20 flex max-w-[75vw] flex-col items-center justify-center">
-        <div className="mt-6 font-montserrat font-medium">
-          <p className="text-xl leading-normal text-gray-800">
+
+      <div className="mx-auto flex max-w-[80vw] flex-col items-center justify-center md:max-w-[72vw] lg:mt-12 lg:max-w-[65vw]">
+        <div className="mt-6 font-normal">
+          <p
+            className="text-base leading-normal
+           text-gray-800 md:text-lg lg:text-xl"
+          >
             Here are some of the most common ENT services that are available at
             our clinic.
           </p>
+
           <div>
-            <p className="pt-8 text-xl font-semibold leading-normal text-gray-800">
+            <p className="pt-4 pb-1 text-base font-semibold text-gray-800 md:pt-6 md:text-lg lg:pt-8 lg:text-xl">
               Ear Services:
             </p>
             {earServices.map((service, index) => (
@@ -34,7 +39,7 @@ const Services = () => {
           </div>
 
           <div>
-            <p className="pt-8 text-xl font-semibold leading-normal text-gray-800">
+            <p className="pt-4 pb-1 text-base font-semibold text-gray-800 md:pt-6 md:text-lg lg:pt-8 lg:text-xl">
               Nose Services:
             </p>
             {noseServices.map((service, index) => (
@@ -47,7 +52,7 @@ const Services = () => {
           </div>
 
           <div>
-            <p className="pt-8 text-xl font-semibold leading-normal text-gray-800">
+            <p className="pt-4 pb-1 text-base font-semibold text-gray-800 md:pt-6 md:text-lg lg:pt-8 lg:text-xl">
               Throat Services:
             </p>
             {throatServices.map((service, index) => (
@@ -60,7 +65,7 @@ const Services = () => {
           </div>
 
           <div>
-            <p className="pt-8 text-xl font-semibold leading-normal text-gray-800">
+            <p className="pt-4 pb-1 text-base font-semibold text-gray-800 md:pt-6 md:text-lg lg:pt-8 lg:text-xl">
               Head & Neck Services:
             </p>
             {headAndNeckServices.map((service, index) => (
@@ -73,7 +78,7 @@ const Services = () => {
           </div>
 
           <div>
-            <p className="pt-8 text-xl font-semibold leading-normal text-gray-800">
+            <p className="pt-4 pb-1 text-base font-semibold text-gray-800 md:pt-6 md:text-lg lg:pt-8 lg:text-xl">
               Additional Services:
             </p>
             {additionalServices.map((service, index) => (
@@ -88,7 +93,7 @@ const Services = () => {
 
         {/* VIDEO SECTION */}
         <div className="mt-32">
-          <header className="flex w-full items-center justify-center pb-16 font-montserrat text-4xl font-semibold text-gray-900">
+          <header className="mb-6 flex w-full items-center justify-center text-[2.2rem] font-semibold md:mb-10 lg:mb-16 lg:text-4xl ">
             Common Procedures
           </header>
           <ServiceVideoCard

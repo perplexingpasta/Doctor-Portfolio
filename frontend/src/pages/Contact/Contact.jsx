@@ -98,13 +98,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="pb-28 pt-44">
-      <header className="absolute flex w-full items-center justify-center font-montserrat text-4xl font-semibold">
+    <div className="pb-16 pt-28 font-montserrat md:pb-28 md:pt-40 lg:pt-44">
+      <header className="flex w-full items-center justify-center text-[2.2rem] font-semibold lg:text-4xl ">
         Contact Us
       </header>
 
-      <div className="flex w-full pt-24" onSubmit={handleSubmit}>
-        <form className="w-1/2 px-24 pt-12 font-montserrat text-4xl font-semibold">
+      <div className="flex lg:w-full lg:pt-24" onSubmit={handleSubmit}>
+        <form className="mx-auto max-w-[80vw] pt-12 font-semibold lg:w-1/2 lg:max-w-[100vw] lg:px-24">
           {/* FIRST NAME */}
           <label className="input input-bordered flex items-center gap-2">
             First Name * :
@@ -152,7 +152,7 @@ const Contact = () => {
           </label>
 
           {/* GENDER */}
-          <label className="input input-bordered flex items-center gap-2">
+          <label className="input input-bordered flex items-center md:gap-2">
             Gender * :
             <div className="form-control">
               <label className="label cursor-pointer">
@@ -256,15 +256,18 @@ const Contact = () => {
             />
           </label>
 
+          {/* INDICATES REQUIRED FIELDS */}
           <p className="ml-6 mt-4 font-montserrat text-sm font-medium text-gray-500">
             * Indicates required fields.
           </p>
+
+          {/* SUBMIT BUTTON */}
           <div className="flex flex-col items-center justify-center">
             <button
               type="submit"
               value="submit"
               // onClick={sucessNotify}
-              className="btn btn-wide ml-5 px-12 sm:btn-sm md:btn-md lg:btn-lg"
+              className="btn btn-md my-6 mb-20 ml-5 px-12 md:btn-wide lg:btn-lg md:mb-28 lg:my-12"
             >
               Submit
             </button>
@@ -273,21 +276,21 @@ const Contact = () => {
         </form>
 
         {/* IMAGE */}
-        <div className="w-1/2">
+        <div className="hidden lg:block lg:w-1/2">
           <img
             src={registrationImg}
             alt="Registration.jpg"
-            className="ml-5 h-5/6 object-cover"
+            className="lg:ml-5 lg:h-5/6 lg:object-cover"
           />
         </div>
       </div>
 
       {/* MAP INTEGRATION */}
-      <div className="pb-10">
+      <div className="h-[500px] pb-10 md:h-[650px] lg:h-[800px]">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19860.446499044578!2d79.41248396210945!3d28.362942695098035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a00170baffbf1f%3A0x38b58aa26e83be05!2sDr.%20Mohit%20Jindal%20E.N.T.%20Clinic!5e0!3m2!1sen!2sin!4v1716206667500!5m2!1sen!2sin"
           width="100%"
-          height="800"
+          height="100%"
           style={{ border: "0" }}
           // allowfullscreen=""
           loading="lazy"

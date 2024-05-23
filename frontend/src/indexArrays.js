@@ -133,7 +133,7 @@ export const faqData = [
   {
     question: "What conditions do you treat as an ENT specialist?",
     answer:
-      "As an ENT specialist, I treat a wide range of conditions related to the ear, nose, and throat. These include hearing loss,ear infections, tinnitus, sinusitis, nasal obstruction, allergies, sleep apnea, throat infections, voice disorders, and head and neck cancers. I also perform surgeries such as tonsillectomy, adenoidectomy, and sinus surgery.",
+      "As an ENT specialist, I treat a wide range of conditions related to the ear, nose, and throat. These include hearing loss, ear infections, tinnitus, sinusitis, nasal obstruction, allergies, sleep apnea, throat infections, voice disorders, and head & neck cancers. I also perform surgeries such as tonsillectomy, adenoidectomy, and sinus surgery.",
   },
   {
     question: "What are the common symptoms of sinusitis?",

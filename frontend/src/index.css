@@ -214,10 +214,12 @@
 
 /* MY OWN CLASSES */
 .nav_black {
-  background-color: #222831;
+  /* previous bluish gray color: #222831 */
+  background-color: #000;
   transition-timing-function: ease-in;
   transition: all 1s;
 }
+
 
 .text_hide {
   opacity: 0;

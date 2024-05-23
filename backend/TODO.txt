@@ -34,9 +34,21 @@ study nike code for responsiveness and layout at 100% desktop
 design all page and all device layout in figma using grid
 make everything responsive
 
+responsive:
+footer ✅
+faq page ✅
+services page ✅
+
+
 react hot toast for notifications ✅
 make netflix style navbar ✅
-divider color 
+divider color and navbar color in other pages
+there occurs loading when a page is accessed from hamburger, fix that
+hamburger icon color and dialog theme is not right
+hamburger doesn't come on for md devices
+add router to hamburger links
+footer links are dead; revive by router
+
 footer same color as navbar
 what are themes in daisyUI
 check consistency of classNames across all headings and add color too
@@ -45,6 +57,7 @@ how to load images faster in webpage
 remove montserrat google font import and use local font instead 
 use alt palaquin or urbanist font along w montserrat or look up fonts that go well w montserrat
 have underline below links in navbar which tells which page you're on
+the youtube videos in services page are squarish
 make the wesbite accessible
 seo optimisation
 

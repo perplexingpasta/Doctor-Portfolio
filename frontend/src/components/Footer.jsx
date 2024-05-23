@@ -91,7 +91,7 @@ const Footer = () => {
           <p>Copyright. All rights reserved.</p>
         </div>
 
-        <div className="m-0 flex items-center gap-5 p-0">
+        <div className="m-0 flex items-center gap-5 pt-6 sm:p-0 md:p-0 md:pb-4">
           {socialMedia.map((icon) => (
             <div
               key={icon}

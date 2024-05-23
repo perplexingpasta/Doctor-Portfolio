@@ -49,13 +49,13 @@ const Nav = () => {
     <header className={`padding-x absolute z-10 w-full ${show && "nav_black"}`}>
       <nav className="max-container flex items-center justify-between">
         <a href="/" className="flex px-0 py-3">
-          <img src={logo} alt="Header Logo" width={70} height={70} />
+          <img src={logo} alt="Header Logo" className="mt-3 h-10 w-10 md:w-16 md:h-16 md:mt-5" />
 
           <div className="px-5 font-montserrat text-gray-200">
-            <h3 className="mb-0 py-0 pt-3 text-3xl font-semibold leading-normal">
+            <h3 className="mb-0 py-0 pt-3 text-base font-semibold md:text-3xl">
               Dr. Robert Zane
             </h3>
-            <h3 className="pb-3 font-montserrat text-[18px] font-light leading-normal text-gray-300">
+            <h3 className="pb-3 font-montserrat text-[12px] font-light text-gray-300 md:text-[18px]">
               Tumbleweed eye baby
             </h3>
           </div>
@@ -75,7 +75,7 @@ const Nav = () => {
         </ul>
 
         {/* HAMBURGER FUNCTIONALITY */}
-        <div className="flex flex-1 items-center justify-end sm:hidden">
+        <div className="flex flex-1 items-center justify-end lg:hidden">
           <img
             src={toggle ? close : hamburger}
             alt="Hamburger Menu"
@@ -104,7 +104,7 @@ const Nav = () => {
         </div>
       </nav>
       <div className="flex flex-1 items-center justify-center">
-        <div className="divider divider-warning mb-0 mt-0 h-0 w-[90vw] "></div>
+        <div className="divider mb-0 mt-0 h-0 w-[90vw] "></div>
       </div>
     </header>
   );

@@ -1,11 +1,9 @@
 /* eslint-disable react/prop-types */
 const ServiceItem = ({ title, description }) => {
   return (
-    <p className="font-montserrat">
-      <span className="font-montserrat text-lg leading-relaxed">{title}</span> :{" "}
-      <span className="font-montserrat text-lg leading-relaxed text-slate-gray">
-        {description}
-      </span>
+    <p className="font-montserrat text-sm md:text-base md:leading-relaxed lg:text-lg lg:leading-6">
+      <span>{title}</span> :{" "}
+      <span className="text-slate-gray">{description}</span>
     </p>
   );
 };

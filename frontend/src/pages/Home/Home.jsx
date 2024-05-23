@@ -8,7 +8,7 @@ import { EmblaCarousel } from "./HeroEmbla";
 const Home = () => {
   return (
     <main className="relative pb-28">
-      <section>
+      <section className="hidden lg:contents">
         <EmblaCarousel />
       </section>
 
