@@ -21,7 +21,7 @@ const Contact = () => {
       style: {
         marginTop: "120px",
         marginRight: "20px",
-        fontSize: "20px",
+        fontSize: "1.25rem",
       },
     });
 
@@ -32,7 +32,7 @@ const Contact = () => {
       style: {
         marginTop: "120px",
         marginRight: "20px",
-        fontSize: "20px",
+        fontSize: "1.25rem",
       },
     });
 
@@ -45,7 +45,7 @@ const Contact = () => {
         style: {
           marginTop: "10px",
           marginRight: "20px",
-          fontSize: "18px",
+          fontSize: "1.1rem",
         },
       },
     );
@@ -270,9 +270,10 @@ const Contact = () => {
               type="submit"
               value="submit"
               // onClick={sucessNotify}
-              className="btn btn-md my-6 mb-20 ml-5 rounded-full px-12 md:btn-wide lg:btn-lg md:mb-28 lg:my-12"
+              className="btn btn-md my-6 mb-20 ml-5 rounded-full px-12 transition duration-300 ease-in-out md:btn-wide lg:btn-lg hover:-translate-y-1 hover:scale-110 hover:bg-red-300 hover:text-white md:mb-28 lg:my-12"
+              // className="btn btn-md my-6 mb-20 ml-5 rounded-full px-12 md:btn-wide lg:btn-lg md:mb-28 lg:my-12"
             >
-              Submit
+              SUBMIT
             </button>
             <Toaster />
           </div>
@@ -282,7 +283,7 @@ const Contact = () => {
         <div className="hidden lg:block lg:w-1/2">
           <img
             src={registrationImg}
-            alt="Registration.jpg"
+            alt=""
             className="lg:ml-5 lg:h-5/6 lg:object-cover"
           />
         </div>

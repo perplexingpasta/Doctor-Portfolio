@@ -40,16 +40,17 @@ const Footer = () => {
     <footer className="max-container">
       <div className="flex flex-wrap items-start justify-between gap-20 max-lg:flex-col">
         <div className="flex flex-col items-start">
+
           <a href="/" className="flex flex-1">
             <img src={logoWhite} alt="Footer Logo" width={60} height={46} />
             {/* USE LOGO FOR HEADER TEXT INSTEAD */}
             <div className="px-5">
-              <h3 className="mb-0 py-0 pt-3 font-montserrat text-3xl font-semibold leading-normal">
+              <h1 className="mb-0 py-0 pt-3 font-montserrat text-3xl font-semibold leading-normal">
                 Dr. Robert Zane
-              </h3>
-              <h3 className="pb-3 font-montserrat text-[18px] font-light leading-normal">
+              </h1>
+              <h1 className="pb-3 font-montserrat text-lg font-light leading-normal">
                 Tumbleweed eye baby
-              </h3>
+              </h1>
             </div>
           </a>
 
@@ -63,13 +64,13 @@ const Footer = () => {
         <div className="flex flex-1 flex-wrap justify-around gap-20 lg:gap-10">
           {footerLinks.map((section) => (
             <div key={section.title}>
-              <h4 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
+              <h1 className="mb-6 font-montserrat text-2xl font-medium leading-normal text-white">
                 {section.title}
-              </h4>
+              </h1>
               <ul>
                 {section.links.map((item) => (
                   <li
-                    className="mt-3 cursor-pointer font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray"
+                    className="mt-3 cursor-pointer font-montserrat text-base leading-normal text-white-400 hover:text-red-300"
                     key={item.label}
                   >
                     <NavLink to={item.href}>{item.label}</NavLink>
@@ -85,7 +86,7 @@ const Footer = () => {
         <div className="flex flex-1 cursor-pointer items-center justify-start gap-2 font-montserrat">
           <img
             src={copyrightSign}
-            alt="Copyright Sign"
+            alt=""
             width={20}
             height={20}
             className="m-0 rounded-full"

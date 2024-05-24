@@ -7,6 +7,7 @@ const MeetTheTeam = () => {
       <div className="flex flex-col items-center justify-center pt-6 md:w-1/2 md:pr-8 lg:px-40 lg:py-32">
         <header className="text-2xl font-semibold text-gray-800 md:text-4xl">
           Meet the team!
+          <div className="relative w-[20vw] border-t-[5px] border-red-300 md:w-[12vw] md:border-t-[6px] lg:w-[10vw]"></div>
         </header>
         <p className="w-full pt-2 font-normal text-gray-500 md:pt-5 md:text-2xl md:leading-normal">
           This is the amazing team that&apos;s gonna take care of your every
@@ -18,7 +19,7 @@ const MeetTheTeam = () => {
       <div className="mx-auto flex max-w-[100vw] md:w-1/2 lg:mr-24">
         <img
           src={people}
-          alt="an image of happy people"
+          alt="our awesome staff at our clinic"
           className="rounded-3xl object-scale-down drop-shadow-md"
         />
       </div>

@@ -57,11 +57,19 @@ have underline below links in navbar which tells which page you're on ✅
 404 responsive ✅
 google reviews widget ✅
 
-the youtube videos in services page are squarish
+alt="" ✅
+button animations/transitions ✅
+animated hey on siteload ✅
+16:9 embedded videos ✅
+physical address in contact, footer ✅
+icons beside text ✅
+make the website accessible
+
+contact page in mobile
+finish about-us
 don't make a services page rather make services a dropdown and those will be individual pages
 use alt palaquin or urbanist font along w montserrat or look up fonts that go well w montserrat
 // finish implementing dark mode
-make the wesbite accessible
 seo optimisation
 
 
@@ -72,7 +80,19 @@ text colors used:
   dark-mode: text-gray-200 and text-gray-400
 font used: montserrat and palanquin
 
+CHANGE AT LAST:
+doctor's name, certifications, homepage text,
+services provided
+whatsapp number
+get in touch numbers and add email in footer
+clinic logo
+
+
 PAID SERVICES:
 domain
 hosting
 elfsight to remove branding
+
+NOTES:
+after deploying, check website design against wcag guidelines for a11y
+

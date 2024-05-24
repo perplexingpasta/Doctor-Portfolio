@@ -1,4 +1,4 @@
-@import './fonts.css';
+@import "./fonts.css";
 
 @tailwind base;
 @tailwind components;
@@ -105,7 +105,7 @@
   text-align: center;
 }
 
-.content h2.header {
+.content h1.header {
   /* font-size: 12vw; */
   line-height: 1em;
   animation: animate 10s ease-in-out infinite;
@@ -147,7 +147,7 @@
   }
 }
 
-.content h4 {
+.content #pagenotfound {
   margin-bottom: 20px;
   text-transform: uppercase;
   /* font-size: 2rem; */
@@ -159,16 +159,10 @@
   justify-content: center;
 }
 .content .btns a {
-  display: inline-block;
   margin: 0 10px;
-  text-decoration: none;
-  border: 2px solid var(--btn-color);
-  color: var(--btn-color);
   font-weight: 500;
   padding: 10px 25px;
-  border-radius: 25px;
   text-transform: uppercase;
-  transition: all 0.3s ease;
 }
 /* .content .btns a:hover {
   background: var(--btn-color);
@@ -217,26 +211,42 @@
   /* background-color: #000; */
   transition-timing-function: ease-in;
   transition: all 1s;
-  @apply bg-gray-950 
-}
-
-.text_hide {
-  opacity: 0;
-  transition: all 1s ease-in;
-  visibility: hidden;
+  @apply bg-gray-950;
 }
 
 /* body {
   background-color: #fbfbf9; /*cotton*/
-  /* fbfcf8 pearl */
-  /* fbfbf9 cotton */
+/* fbfcf8 pearl */
+/* fbfbf9 cotton */
 /* }  */
 
+/* THIS CONTROLS TEXT HIGHLIGHTING */
 ::selection {
   @apply bg-red-300 text-white;
   /* bg-red-300 */
 }
 
+/* THIS IS FOR TRANSITION ANIMATION OF TEXT ON CAROUSEL IN HERO ON HOMEPAGE */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.text_hide {
+  opacity: 0;
+  transition: all 1s ease-out;
+  visibility: hidden;
+}
 
 /* EMBLA CLASSES */
 .embla {

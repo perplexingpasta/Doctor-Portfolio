@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import img1 from "../../assets/home/hero-carousel-images/imgLight1.jpg";
@@ -24,8 +24,22 @@ import img10 from "../../assets/home/hero-carousel-images/imgLight10.jpg";
 import { HeroEmblaCard } from "./HeroCard";
 
 export function EmblaCarousel() {
+
+  // THIS IS THE CODE FOR TRANSITION ANIMATION OF THE TEXT ON SITE LOAD
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (textRef.current) {
+        textRef.current.classList.add("fade-in-up");
+      }
+    }, 1000); // This is the delay in milliseconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const autoplayOptions = {
-    delay: 5000, //delay timer in milliseconds, actually does work
+    delay: 7000, //delay timer in milliseconds, actually does work
   };
   const [emblaRef] = useEmblaCarousel({ loop: true }, [
     Autoplay(autoplayOptions),
@@ -50,7 +64,8 @@ export function EmblaCarousel() {
   return (
     <>
       <header
-        className={`absolute left-5 top-80 z-10 mb-0 mt-80 pb-0 pt-5 font-montserrat text-[15rem] font-black text-gray-900 ${show && "text_hide"}`}
+        ref={textRef}
+        className={`absolute opacity-0 left-5 top-80 z-10 mb-0 mt-80 pb-0 pt-5 font-montserrat text-[15rem] font-black text-gray-900 ${show && "text_hide"}`}
       >
         Hey!
       </header>

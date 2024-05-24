@@ -72,25 +72,24 @@ const Nav = () => {
         <a href="/" className="flex px-0 py-3">
           <img
             src={show ? logoWhite : logoDark}
-            alt="Header Logo"
+            alt="Dr. Robert Zane's Logo"
             className="mt-3 h-10 w-10 md:mt-5 md:h-16 md:w-16"
           />
 
           <div
             className={`px-5 font-montserrat text-gray-800 ${show && "text-slate-200"}`}
           >
-            <h3 className="mb-0 py-0 pt-3 text-base font-semibold md:text-3xl">
+            <h1 className="mb-0 py-0 pt-3 text-xl font-semibold md:text-3xl">
               Dr. Robert Zane
-            </h3>
-            <h3
-              className={`pb-3 font-montserrat text-[12px] font-light text-gray-700 md:text-[18px] ${show && "text-slate-300"}`}
+            </h1>
+            <h1
+              className={`pb-3 font-montserrat text-[0.8rem] font-light text-gray-700 md:text-lg ${show && "text-slate-300"}`}
             >
               Tumbleweed eye baby
-            </h3>
+            </h1>
           </div>
         </a>
 
-        {/* COMMMMMMMMMMMMENT */}
         <ul className="flex flex-1 items-center justify-end gap-14 max-lg:hidden">
           {links.map((item) => (
             <li key={item.label}>
@@ -98,8 +97,8 @@ const Nav = () => {
                 to={item.href}
                 className={({ isActive }) =>
                   isActive
-                    ? `border-b-[3px] border-gray-500 font-montserrat text-lg font-medium leading-normal text-gray-700 hover:text-red-300 lg:text-xl ${show && "border-gray-300 text-slate-300 hover:text-red-300"}`
-                    : `font-montserrat text-lg font-medium leading-normal text-gray-700 hover:text-red-300 lg:text-xl ${show && "text-slate-300 hover:text-red-300"}`
+                    ? `font-montserrat text-lg font-semibold text-red-300 lg:text-xl ${show && "text-red-300  hover:text-red-300"}`
+                    : `font-montserrat text-lg font-medium text-gray-700 hover:text-red-300 lg:text-xl ${show && "text-slate-300 hover:text-red-300"}`
                 }
               >
                 {item.label}
@@ -158,7 +157,7 @@ const Nav = () => {
                   ? hamburgerDark
                   : hamburgerWhite
             }
-            alt="Hamburger Menu"
+            alt=""
             className="mr-4 h-[28px] w-[28px] object-contain"
             onClick={() => setToggle((prev) => !prev)}
           />
@@ -166,7 +165,7 @@ const Nav = () => {
           <div
             className={`${
               toggle ? "flex" : "hidden"
-            } sidebar absolute right-0 top-20 mx-4 my-2 min-w-[140px] rounded-xl bg-gray-900 p-6`}
+            } sidebar absolute right-0 top-20 mx-4 my-2 min-w-36  rounded-xl bg-gray-950 p-6`}
           >
             <ul className="flex flex-1 list-none flex-col items-start justify-end gap-6">
               {links.map((item) => (

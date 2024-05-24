@@ -8,6 +8,7 @@ import {
   additionalServices,
 } from "../../indexArrays";
 
+
 const Services = () => {
   return (
     <div className="pb-16 pt-28 font-montserrat md:pb-28 md:pt-40 lg:pt-44">
@@ -99,19 +100,20 @@ const Services = () => {
           <header className="mb-6 flex w-full items-center justify-center text-[2.2rem] font-semibold md:mb-10 lg:mb-16 lg:text-4xl ">
             Common Procedures
           </header>
-          <ServiceVideoCard
-            key={1}
-            videoURL={
-              "https://www.youtube-nocookie.com/embed/zoduap_DJoE?si=RcKWou21fcJ9FIJ6"
-            }
-            videoName={"Tonsillectomy"}
-            videoDesc={
-              "The surgical removal of the tonsils, which are two small glands located at the back of the throat."
-            }
-            commonIndications={
-              "Chronic tonsillitis, sleep apnea, and recurrent throat infections."
-            }
-          />
+
+            <ServiceVideoCard
+              key={1}
+              videoURL={
+                "https://www.youtube-nocookie.com/embed/zoduap_DJoE?si=RcKWou21fcJ9FIJ6"
+              }
+              videoName={"Tonsillectomy"}
+              videoDesc={
+                "The surgical removal of the tonsils, which are two small glands located at the back of the throat."
+              }
+              commonIndications={
+                "Chronic tonsillitis, sleep apnea, and recurrent throat infections."
+              }
+            />
           <ServiceVideoCard
             key={2}
             videoURL={
