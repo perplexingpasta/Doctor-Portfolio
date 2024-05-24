@@ -27,7 +27,7 @@ const App = () => {
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </section>
-        <section className="padding-x w-full bg-gray-900 pb-8 pt-16 text-white">
+        <section className="padding-x w-full bg-gray-950 pb-8 pt-16 text-white">
           <Footer />
         </section>
       </BrowserRouter>

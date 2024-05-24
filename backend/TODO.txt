@@ -46,19 +46,21 @@ add router to hamburger links ✅
 hamburger color issue with navbar scroll ✅
 footer same color as navbar ✅
 
-divider color and navbar color in other pages
-add carousel and star rating in reviews section
-finish implementing dark mode
+change codepen logo ✅
+divider color ✅
+fallback font or font not showing in tab ✅
+make bg kinda beige ✅
+change highlight color of text ✅
+check consistency of classNames across all headings and add color too ✅
+add underline under all headings ✅
+have underline below links in navbar which tells which page you're on ✅
+404 responsive ✅
+google reviews widget ✅
 
-make bg kinda beige for light mode setting
-check consistency of classNames across all headings and add color too
-add underline under all headings
-use alt palaquin or urbanist font along w montserrat or look up fonts that go well w montserrat
-have underline below links in navbar which tells which page you're on
-
-how to load images faster in webpage
 the youtube videos in services page are squarish
 don't make a services page rather make services a dropdown and those will be individual pages
+use alt palaquin or urbanist font along w montserrat or look up fonts that go well w montserrat
+// finish implementing dark mode
 make the wesbite accessible
 seo optimisation
 
@@ -69,3 +71,8 @@ text colors used:
   light-mode: text-gray-800 and text-gray-500
   dark-mode: text-gray-200 and text-gray-400
 font used: montserrat and palanquin
+
+PAID SERVICES:
+domain
+hosting
+elfsight to remove branding

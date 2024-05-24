@@ -1,9 +1,10 @@
-// import Hero from "./Hero";
 import KnowTheDoctor from "./KnowTheDoctor";
-import Testimonials from "./Testimonials";
+import TestimonialsGoogle from "./TestimonialsGoogle";
 import MeetTheTeam from "./MeetTheTeam";
 import VisitUs from "./VisitUs";
 import { EmblaCarousel } from "./HeroEmbla";
+// import Hero from "./Hero";
+// import Testimonials from "./Testimonials";
 
 const Home = () => {
   return (
@@ -22,8 +23,12 @@ const Home = () => {
       </section>
 
       <section className="padding bg-gray-200">
-        <Testimonials />
+        <TestimonialsGoogle />
       </section>
+
+      {/* <section className="padding bg-gray-200">
+        <Testimonials />
+      </section> */}
 
       <section className="padding">
         <MeetTheTeam />

@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/icons/logowhite.svg";
-// import hamburger from "../assets/icons/hamburger.svg";
+import logoWhite from "../assets/icons/cplogo-white.svg";
+import logoDark from "../assets/icons/cplogo-dark.svg";
 import hamburgerWhite from "../assets/icons/hamburger-white.svg";
 import hamburgerDark from "../assets/icons/hamburger-dark.svg";
-// import close from "../assets/icons/close.svg";
 import closeWhite from "../assets/icons/close-white.svg";
 import closeDark from "../assets/icons/close-dark.svg";
 
@@ -72,42 +71,42 @@ const Nav = () => {
       <nav className="max-container flex items-center justify-between">
         <a href="/" className="flex px-0 py-3">
           <img
-            src={logo}
+            src={show ? logoWhite : logoDark}
             alt="Header Logo"
             className="mt-3 h-10 w-10 md:mt-5 md:h-16 md:w-16"
           />
 
           <div
-            className={`px-5 font-montserrat text-gray-800 ${show && "text-gray-200"}`}
+            className={`px-5 font-montserrat text-gray-800 ${show && "text-slate-200"}`}
           >
             <h3 className="mb-0 py-0 pt-3 text-base font-semibold md:text-3xl">
               Dr. Robert Zane
             </h3>
             <h3
-              className={`pb-3 font-montserrat text-[12px] font-light text-gray-700 md:text-[18px] ${show && "text-gray-400"}`}
+              className={`pb-3 font-montserrat text-[12px] font-light text-gray-700 md:text-[18px] ${show && "text-slate-300"}`}
             >
               Tumbleweed eye baby
             </h3>
           </div>
         </a>
 
+        {/* COMMMMMMMMMMMMENT */}
         <ul className="flex flex-1 items-center justify-end gap-14 max-lg:hidden">
           {links.map((item) => (
             <li key={item.label}>
               <NavLink
                 to={item.href}
-                className={`font-montserrat text-lg font-medium leading-normal text-gray-700 hover:text-coral-red lg:text-xl ${show && "text-gray-400"}`}
+                className={({ isActive }) =>
+                  isActive
+                    ? `border-b-[3px] border-gray-500 font-montserrat text-lg font-medium leading-normal text-gray-700 hover:text-red-300 lg:text-xl ${show && "border-gray-300 text-slate-300 hover:text-red-300"}`
+                    : `font-montserrat text-lg font-medium leading-normal text-gray-700 hover:text-red-300 lg:text-xl ${show && "text-slate-300 hover:text-red-300"}`
+                }
               >
                 {item.label}
               </NavLink>
             </li>
           ))}
         </ul>
-
-        {/* X MARK FROM FONT ICON
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="white">
-          <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
-        </svg> */}
 
         {/* DARK AND LIGHT MODE BUTTON */}
         {/* <label className="flex cursor-pointer gap-2 pl-12">
@@ -150,7 +149,15 @@ const Nav = () => {
         {/* HAMBURGER FUNCTIONALITY */}
         <div className="flex flex-1 items-center justify-end lg:hidden">
           <img
-            src={toggle ? (show ? closeWhite : closeDark) : (show ? hamburgerDark : hamburgerWhite)}
+            src={
+              toggle
+                ? show
+                  ? closeWhite
+                  : closeDark
+                : show
+                  ? hamburgerDark
+                  : hamburgerWhite
+            }
             alt="Hamburger Menu"
             className="mr-4 h-[28px] w-[28px] object-contain"
             onClick={() => setToggle((prev) => !prev)}
@@ -176,8 +183,10 @@ const Nav = () => {
           </div>
         </div>
       </nav>
+
+      {/* DIVIDER */}
       <div className="flex flex-1 items-center justify-center">
-        <div className="divider mb-0 mt-0 h-0 w-[90vw] "></div>
+        <div className="mb-0 mt-0 h-0 w-[85vw] border-t-2 border-gray-700 "></div>
       </div>
     </header>
   );

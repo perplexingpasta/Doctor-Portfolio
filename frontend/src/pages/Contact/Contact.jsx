@@ -99,8 +99,11 @@ const Contact = () => {
 
   return (
     <div className="pb-16 pt-28 font-montserrat md:pb-28 md:pt-40 lg:pt-44">
-      <header className="flex w-full items-center justify-center text-[2.2rem] font-semibold lg:text-4xl ">
-        Contact Us
+      <header className="flex flex-col items-center justify-center text-[2.2rem] font-semibold lg:text-4xl ">
+        <div>
+          Contact Us
+          <div className="relative w-[30vw] border-t-[5px] border-red-300 md:w-[17vw] md:border-t-[6px] lg:w-[12vw]"></div>
+        </div>
       </header>
 
       <div className="flex lg:w-full lg:pt-24" onSubmit={handleSubmit}>
@@ -161,7 +164,7 @@ const Contact = () => {
                   type="radio"
                   name="gender"
                   id="gender"
-                  className="radio checked:bg-red-500"
+                  className="radio checked:bg-red-300"
                   value="male"
                   checked={user.gender === "male"}
                   onChange={handleInput}
@@ -175,7 +178,7 @@ const Contact = () => {
                   type="radio"
                   name="gender"
                   id="gender"
-                  className="radio checked:bg-blue-500"
+                  className="radio checked:bg-red-300"
                   value="female"
                   checked={user.gender === "female"}
                   onChange={handleInput}
@@ -189,7 +192,7 @@ const Contact = () => {
                   type="radio"
                   name="gender"
                   id="gender"
-                  className="radio checked:bg-purple-500"
+                  className="radio checked:bg-red-300"
                   value="other"
                   checked={user.gender === "other"}
                   onChange={handleInput}
@@ -248,7 +251,6 @@ const Contact = () => {
               type="text"
               className="grow"
               placeholder="Fever and headache for 3 days"
-
               required
               name="complaints"
               id="complaints"
@@ -268,7 +270,7 @@ const Contact = () => {
               type="submit"
               value="submit"
               // onClick={sucessNotify}
-              className="btn btn-md my-6 mb-20 ml-5 px-12 md:btn-wide lg:btn-lg md:mb-28 lg:my-12"
+              className="btn btn-md my-6 mb-20 ml-5 rounded-full px-12 md:btn-wide lg:btn-lg md:mb-28 lg:my-12"
             >
               Submit
             </button>

@@ -17,10 +17,10 @@ const VisitUs = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center md:ml-16 md:w-1/2 lg:ml-44">
-        <header className="text-2xl font-semibold text-gray-800 dark:text-gray-200 md:text-4xl">
+        <header className="text-2xl font-semibold text-gray-800 md:text-4xl">
           Visit Us
         </header>
-        <p className="pt-2 font-normal text-gray-500 dark:text-gray-400 md:max-w-[100vw] md:pt-5 md:text-2xl md:leading-snug lg:max-w-[30vw] lg:leading-relaxed">
+        <p className="pt-2 font-normal text-gray-500 md:max-w-[100vw] md:pt-5 md:text-2xl md:leading-snug lg:max-w-[30vw] lg:leading-relaxed">
           Check out the map for our address.
           <br />
           The opening hours are as follows:

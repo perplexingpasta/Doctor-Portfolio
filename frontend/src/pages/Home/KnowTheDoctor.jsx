@@ -14,8 +14,8 @@ const KnowTheDoctor = () => {
         />
       </div>
 
-      <div className="pl-2 pt-4 text-base font-semibold text-gray-500 dark:text-gray-400 md:w-1/2 md:pl-10 md:pt-0 md:text-2xl lg:pl-16 lg:text-3xl">
-        <header className="text-2xl text-gray-800 md:pb-2 md:text-[2.2rem] lg:text-4xl dark:text-gray-200">
+      <div className="pl-2 pt-4 text-base font-semibold text-gray-500 md:w-1/2 md:pl-10 md:pt-0 md:text-2xl lg:pl-16 lg:text-3xl">
+        <header className="text-2xl text-gray-800 md:pb-2 md:text-[2.2rem] lg:text-4xl">
           Dr. Robert Zane
         </header>
         <h3>MBBS, MD, DM, TJAY</h3>

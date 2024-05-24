@@ -50,7 +50,7 @@ export function EmblaCarousel() {
   return (
     <>
       <header
-        className={`absolute left-5 top-80 z-10 mb-0 mt-80 pb-0 pt-5 font-montserrat text-[15rem] font-black text-gray-700 ${show && "text_hide"}`}
+        className={`absolute left-5 top-80 z-10 mb-0 mt-80 pb-0 pt-5 font-montserrat text-[15rem] font-black text-gray-900 ${show && "text_hide"}`}
       >
         Hey!
       </header>

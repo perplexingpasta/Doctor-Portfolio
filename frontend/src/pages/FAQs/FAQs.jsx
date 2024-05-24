@@ -5,8 +5,11 @@ import { faqData } from "../../indexArrays";
 const FAQs = () => {
   return (
     <div className="pb-16 pt-28 font-montserrat md:pb-28 md:pt-40 lg:pt-44">
-      <header className="flex w-full items-center justify-center text-[2.2rem] font-semibold lg:text-4xl ">
-        FAQs
+      <header className="flex flex-col items-center justify-center text-[2.2rem] font-semibold lg:text-4xl ">
+        <div>
+          FAQs
+          <div className="relative w-[12vw] border-t-[5px] border-red-300 md:w-[8vw] md:border-t-[6px] lg:w-[6vw]"></div>
+        </div>
       </header>
 
       {/* QUESTIONS AND ANSWERS */}

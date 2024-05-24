@@ -74,3 +74,10 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/Outfit-Variable.ttf") format("truetype");
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
+}
