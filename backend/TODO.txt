@@ -63,16 +63,17 @@ animated hey on siteload ✅
 16:9 embedded videos ✅
 physical address in contact, footer ✅
 icons beside text ✅
-make the website accessible
 
+see if you can add the warm body background
+make the website accessible
 contact page in mobile
 finish about-us
 don't make a services page rather make services a dropdown and those will be individual pages
 use alt palaquin or urbanist font along w montserrat or look up fonts that go well w montserrat
 // finish implementing dark mode
-seo optimisation
 
 
+__________________________________________________________________________________________________________________________________________________________________________________________
 SITE INFO:
 navbar bg color:  #222831;
 text colors used: 
@@ -80,18 +81,22 @@ text colors used:
   dark-mode: text-gray-200 and text-gray-400
 font used: montserrat and palanquin
 
+
 CHANGE AT LAST:
 doctor's name, certifications, homepage text,
 services provided
 whatsapp number
 get in touch numbers and add email in footer
 clinic logo
+for the carousel section, make sure all images are 1920x1080 or more but 16:9 basically and the hey or any text has good contrast against it
+seo optimisation
 
 
 PAID SERVICES:
 domain
 hosting
 elfsight to remove branding
+
 
 NOTES:
 after deploying, check website design against wcag guidelines for a11y

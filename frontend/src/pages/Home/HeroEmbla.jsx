@@ -24,7 +24,6 @@ import img10 from "../../assets/home/hero-carousel-images/imgLight10.jpg";
 import { HeroEmblaCard } from "./HeroCard";
 
 export function EmblaCarousel() {
-
   // THIS IS THE CODE FOR TRANSITION ANIMATION OF THE TEXT ON SITE LOAD
   const textRef = useRef(null);
 
@@ -65,12 +64,12 @@ export function EmblaCarousel() {
     <>
       <header
         ref={textRef}
-        className={`absolute opacity-0 left-5 top-80 z-10 mb-0 mt-80 pb-0 pt-5 font-montserrat text-[15rem] font-black text-gray-900 ${show && "text_hide"}`}
+        className={`absolute left-5 top-[27.8rem] z-10 mb-0 hidden pb-0 pt-5 font-montserrat font-black text-gray-900 opacity-0 md:block md:text-[9rem] lg:top-[20rem] lg:mt-80 lg:text-[15rem] ${show && "text_hide"}`}
       >
         Hey!
       </header>
       <div className="embla" ref={emblaRef}>
-        <div className="embla__container h-[100vh]">
+        <div className="embla__container lg:h-[100vh]">
           <HeroEmblaCard src={img1} />
           <HeroEmblaCard src={img2} />
           <HeroEmblaCard src={img3} />

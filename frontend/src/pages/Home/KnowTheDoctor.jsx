@@ -4,14 +4,14 @@ import squareImg2 from "../../assets/home/square-pfp2.jpg";
 
 const KnowTheDoctor = () => {
   return (
-    <div className="mx-auto flex max-w-[90vw] flex-col pt-20 font-montserrat md:w-full md:flex-row md:pt-24 lg:ml-24 lg:pt-0">
+    <div className="mx-auto flex max-w-[90vw] flex-col pt-24 font-montserrat md:-mt-20 md:w-full md:flex-row md:pt-0 lg:ml-24 lg:mt-0">
       {/* IMAGE */}
-      <div className="max-w-[80vw] md:my-auto md:w-1/2 lg:max-w-[30vw]">
+      <div className="max-w-[100vw] md:my-auto md:w-1/2 lg:max-w-[30vw]">
         <AspectRatio.Root ratio={1 / 1}>
           <img
             src={squareImg2}
             alt="Dr. Robert Zane smiling"
-            className="rounded-3xl h-full w-full object-cover drop-shadow md:drop-shadow-md lg:drop-shadow-lg"
+            className="h-full w-full rounded-3xl object-cover drop-shadow md:drop-shadow-md lg:drop-shadow-lg"
           />
         </AspectRatio.Root>
       </div>

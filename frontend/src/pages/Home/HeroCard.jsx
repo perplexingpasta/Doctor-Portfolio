@@ -21,7 +21,7 @@ export const HeroEmblaCard = ({ src }) => {
   return (
     <>
       <div className="embla__slide">
-        <img src={src} alt="" className="object-contain" />
+        <img src={src} alt="carousel images of the doctor" className="object-contain" />
       </div>
     </>
   );

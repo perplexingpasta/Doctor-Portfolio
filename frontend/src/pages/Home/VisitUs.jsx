@@ -15,8 +15,9 @@ const VisitUs = () => {
         </div>
       </div>
 
+      {/* TEXT */}
       <div className="flex flex-col items-center justify-center md:ml-16 md:w-1/2 lg:ml-44">
-        <header className="text-2xl font-semibold pb-2 text-gray-800 md:text-4xl">
+        <header className="pb-2 text-2xl font-semibold text-gray-800 md:text-4xl">
           Visit Us
           <div className="relative w-[12vw] border-t-[5px] border-red-300 md:w-[10vw] md:border-t-[6px] lg:w-[7vw]"></div>
         </header>
