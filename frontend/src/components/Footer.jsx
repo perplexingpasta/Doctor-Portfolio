@@ -83,7 +83,7 @@ const Footer = () => {
       </div>
 
       <div className="mt-16 flex justify-between text-white-400 max-sm:flex-col max-sm:items-center">
-        <div className="flex flex-1 cursor-pointer items-center justify-start gap-2 font-montserrat">
+        <div className="flex flex-1 items-center justify-start gap-2 font-montserrat">
           <img
             src={copyrightSign}
             alt=""

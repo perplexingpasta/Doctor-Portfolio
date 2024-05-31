@@ -97,7 +97,7 @@ const Nav = () => {
                 to={item.href}
                 className={({ isActive }) =>
                   isActive
-                    ? `font-montserrat text-lg font-semibold text-gray-900 lg:text-xl ${show && "text-red-300  hover:text-red-300"}`
+                    ? `font-montserrat text-lg font-semibold text-gray-900 lg:text-xl ${show && "text-red-300"}`
                     : `font-montserrat text-lg font-medium text-gray-700 hover:text-red-300 lg:text-xl ${show && "text-slate-300 hover:text-red-300"}`
                 }
               >

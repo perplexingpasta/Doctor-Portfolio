@@ -1,6 +1,6 @@
 /* src/fonts.css */
 
-@font-face {
+/* @font-face {
   font-family: "Montserrat";
   src: url("./assets/fonts/Montserrat-Variable.ttf") format("truetype");
   font-weight: 100 200 300 400 500 600 700 800 900;
@@ -10,6 +10,20 @@
 @font-face {
   font-family: "Montserrat";
   src: url("./assets/fonts/Montserrat-Italic-Variable.ttf") format("truetype");
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Variable.ttf") format("truetype");
+  font-weight: 100 900; /* Covering the range from 100 to 900 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Italic-Variable.ttf") format("truetype");
+  font-weight: 100 900; /* Covering the range from 100 to 900 */
   font-style: italic;
 }
 
@@ -78,6 +92,13 @@
 @font-face {
   font-family: "Outfit";
   src: url("./assets/fonts/Outfit-Variable.ttf") format("truetype");
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lexend";
+  src: url("./assets/fonts/Lexend-Variable.ttf") format("truetype");
   font-weight: 100 200 300 400 500 600 700 800 900;
   font-style: normal;
 }

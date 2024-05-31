@@ -18,6 +18,7 @@ export default {
         palanquin: ["Palanquin", "Helvetica", "Arial", "sans-serif"],
         urbanist: ["Urbanist", "Helvetica", "Arial", "sans-serif"],
         outfit: ["Outfit", "Helvetica", "Arial", "sans-serif"],
+        lexend: ["Lexend", "Helvetica", "Arial", "sans-serif"],
         montserrat: [
           "Montserrat",
           "Helvetica",
@@ -29,6 +30,17 @@ export default {
           "Gill Sans",
           "sans-serif",
         ],
+      },
+      fontWeight: {
+        thin: 100,
+        extralight: 200,
+        light: 300,
+        normal: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 700,
+        extrabold: 800,
+        black: 900,
       },
       colors: {
         primary: "#ffffff",
@@ -46,6 +58,10 @@ export default {
       },
       screens: {
         wide: "1440px",
+      },
+      dropShadow: {
+        "solid-black-hero": "15px 15px 0px #000", // Custom drop shadow
+        "solid-black-subtext": "2px 2px 0px #000",
       },
     },
   },

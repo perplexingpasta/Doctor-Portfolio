@@ -105,7 +105,42 @@ const Contact = () => {
           <div className="relative w-[30vw] border-t-[5px] border-red-300 md:w-[17vw] md:border-t-[6px] lg:w-[12vw]"></div>
         </div>
       </header>
+      <p className="relative flex items-center justify-center pt-4 font-medium md:pt-6 md:text-lg">
+        We&apos;d love to talk about how <br className="block md:hidden" /> we
+        can help you.
+      </p>
 
+      {/* CONTACT NUMBER */}
+      <div className="mt-3 flex flex-col items-center justify-center md:flex-row md:gap-6">
+        <div className="flex flex-row">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1.6rem"
+            height="1.6rem"
+            viewBox="0 0 24 24"
+            className="fill-gray-500"
+          >
+            <rect width="24" height="24" fill="none" />
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z" />
+          </svg>
+          <p className="font-medium md:text-lg">+91 66632-22290</p>
+        </div>
+        <div className="flex flex-row">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1.6rem"
+            height="1.6rem"
+            viewBox="0 0 24 24"
+            className="fill-gray-500"
+          >
+            <rect width="24" height="24" fill="none" />
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z" />
+          </svg>
+          <p className="font-medium md:text-lg">+91 66632-22290</p>
+        </div>
+      </div>
+
+      {/* CONTACT FORM */}
       <div className="flex lg:w-full lg:pt-24" onSubmit={handleSubmit}>
         <form className="mx-auto max-w-[80vw] pt-12 font-semibold lg:w-1/2 lg:max-w-[100vw] lg:px-24">
           {/* FIRST NAME */}
@@ -290,6 +325,13 @@ const Contact = () => {
       </div>
 
       {/* MAP INTEGRATION */}
+      <header className="mt-12 flex flex-col items-center justify-center pb-8 text-[2.2rem] font-semibold md:pb-16 lg:mt-28 lg:text-4xl ">
+        <div>
+          Visit Us
+          <div className="relative w-[22vw] border-t-[5px] border-red-300 md:w-[11vw] md:border-t-[6px] lg:w-[8vw]"></div>
+        </div>
+      </header>
+
       <div className="h-[500px] pb-10 md:h-[650px] lg:h-[800px]">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19860.446499044578!2d79.41248396210945!3d28.362942695098035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a00170baffbf1f%3A0x38b58aa26e83be05!2sDr.%20Mohit%20Jindal%20E.N.T.%20Clinic!5e0!3m2!1sen!2sin!4v1716206667500!5m2!1sen!2sin"

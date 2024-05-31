@@ -64,6 +64,11 @@ animated hey on siteload ✅
 physical address in contact, footer ✅
 icons beside text ✅
 
+add black solid opacity100 drop shadow to the hey ✅
+removed curor pointer from copyright in footer ✅
+check cursor pointer for all buttons and footer links ✅
+contact us page should display numbers above the form ✅
+
 see if you can add the warm body background
 make the website accessible
 contact page in mobile
@@ -90,11 +95,11 @@ get in touch numbers and add email in footer
 clinic logo
 for the carousel section, make sure all images are 1920x1080 or more but 16:9 basically and the hey or any text has good contrast against it
 seo optimisation
-
+give proper favicon
 
 PAID SERVICES:
 domain
-hosting
+hosting (can try on hostinger with JSM code)
 elfsight to remove branding
 
 

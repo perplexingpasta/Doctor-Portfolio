@@ -64,7 +64,7 @@ export function EmblaCarousel() {
     <>
       <header
         ref={textRef}
-        className={`absolute left-5 top-[27.8rem] z-10 mb-0 hidden pb-0 pt-5 font-montserrat font-black text-gray-900 opacity-0 md:block md:text-[9rem] lg:top-[20rem] lg:mt-80 lg:text-[15rem] ${show && "text_hide"}`}
+        className={`absolute left-5 top-[27.8rem] z-10 mb-0 hidden pb-0 pt-5 font-montserrat font-black text-white opacity-0 drop-shadow-solid-black-hero md:block md:text-[9rem] lg:top-[20rem] lg:mt-80 lg:text-[15rem] ${show && "text_hide"}`}
       >
         Hey!
       </header>
