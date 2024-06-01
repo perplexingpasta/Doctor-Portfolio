@@ -214,11 +214,11 @@
   @apply bg-gray-950;
 }
 
-/* body {
+body {
   background-color: #fbfbf9; /*cotton*/
-/* fbfcf8 pearl */
-/* fbfbf9 cotton */
-/* }  */
+  /* fbfcf8 pearl */
+  /* fbfbf9 cotton */
+}
 
 /* THIS CONTROLS TEXT HIGHLIGHTING */
 ::selection {

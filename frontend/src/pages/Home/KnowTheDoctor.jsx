@@ -20,7 +20,7 @@ const KnowTheDoctor = () => {
         <h1 className="text-2xl text-gray-800 md:pb-2 md:text-[2.2rem] lg:text-4xl">
           Dr. Robert Zane
         </h1>
-        <h2>MBBS, MD, DM, TJAY</h2>
+        <h2>MBBS, MD, ABC</h2>
         <p className="pt-2 font-normal leading-5 md:pt-5 md:leading-normal lg:max-w-[30vw]  ">
           With over 20 years of experience in the field and having done more
           than 2000 surgeries, Robert is an outstanding and the most meticulous

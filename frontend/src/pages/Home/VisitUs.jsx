@@ -37,9 +37,10 @@ const VisitUs = () => {
               <span className="font-semibold">Address:</span>
             </div>
             <div className="text-center md:text-2xl">
-              127, Parkstone Avenue <br />
-              Oregon, Jersey <br />
-              NJ, USA
+              Dr. Mohit Jindal E.N.T Clinic
+              <br />
+              35 J-14, Rampur Garden <br />
+              Bareilly, U.P.
             </div>
           </div>
 
@@ -73,7 +74,7 @@ const VisitUs = () => {
               </span>
             </div>
           </div>
-          <p className="mt-6 text-center text-sm md:mt-8 md:text-base lg:mt-20 lg:text-xl">
+          <p className="mt-6 text-center text-sm md:mt-8 md:text-base md:max-w-[35vw] mx-auto lg:mt-20 lg:text-xl">
             * The clinic might be closed for technical reasons so it&apos;d be
             better if you call and confirm before paying a visit!
           </p>

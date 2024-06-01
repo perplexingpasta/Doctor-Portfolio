@@ -1,9 +1,8 @@
 import { useState } from "react";
-// import registrationImg from "../../assets/contact-us/Registration.jpg";
 import img2 from "../../assets/contact-us/img2.png";
 import toast, { Toaster } from "react-hot-toast";
 
-const Contact = () => {
+const ContactMobile = () => {
   const [user, setUser] = useState({
     firstname: "",
     lastname: "",
@@ -18,38 +17,32 @@ const Contact = () => {
   const successNotify = () =>
     toast.success("Successfully submitted!", {
       duration: 5000,
-      position: "top-right",
       style: {
-        marginTop: "120px",
-        marginRight: "20px",
-        fontSize: "1.25rem",
+        marginTop: "100px",
+        // marginRight: "20px",
+        fontSize: "1rem",
       },
     });
 
   const errorNotify = () =>
     toast.error("Something went wrong!", {
       duration: 5000,
-      position: "top-right",
       style: {
-        marginTop: "120px",
-        marginRight: "20px",
-        fontSize: "1.25rem",
+        marginTop: "100px",
+        // marginRight: "20px",
+        fontSize: "1rem",
       },
     });
 
   const errorNotifyMultiLine = () =>
-    toast(
-      "Your email address already exists in the system. \nPlease use an alternate email address or leave it blank.",
-      {
-        duration: 8000,
-        position: "top-right",
-        style: {
-          marginTop: "10px",
-          marginRight: "20px",
-          fontSize: "1.1rem",
-        },
+    toast("Please use an alternate email address.", {
+      duration: 5000,
+      style: {
+        marginTop: "10px",
+        // marginRight: "20px",
+        fontSize: "1rem",
       },
-    );
+    });
 
   const handleInput = (e) => {
     let name = e.target.name;
@@ -99,7 +92,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="hidden pb-16 pt-20 font-montserrat md:block md:pb-28 md:pt-40 lg:pt-44">
+    <div className="pb-16 pt-28 font-montserrat block md:hidden">
       <header className="flex flex-col items-center justify-center text-[2.2rem] font-semibold lg:text-4xl ">
         <div>
           Contact Us
@@ -111,40 +104,35 @@ const Contact = () => {
         can help you.
       </p>
 
-      {/* CONTACT NUMBER CENTRE JUSTIFIED*/}
-      {/* <div c2 */}
-
-      {/* CONTACT NUMBER TOP RIGHT*/}
-      <div className="mr-48 relative -top-24 flex flex-col items-end justify-end md:gap-2">
-        <div className="flex flex-row items-center justify-center text-center">
-        <svg
+      {/* CONTACT NUMBER */}
+      <div className="mt-3 flex flex-col items-center justify-center md:flex-row md:gap-6">
+        <div className="flex flex-row">
+          <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="1.5rem"
-            height="1.5rem"
+            width="1.6rem"
+            height="1.6rem"
             viewBox="0 0 24 24"
-            className="fill-gray-500 mr-1"
+            className="fill-gray-500"
           >
             <rect width="24" height="24" fill="none" />
             <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z" />
           </svg>
-          <p className="font-medium md:text-xl"> Call Us</p>
+          <p className="font-medium md:text-lg">+91 66632-22290</p>
         </div>
-          <p className="font-medium md:text-lg">+91 66632-22290</p>
-          <p className="font-medium md:text-lg">+91 66632-22290</p>
       </div>
 
       {/* CONTACT FORM */}
-      <div className="flex md:w-full lg:pt-12" onSubmit={handleSubmit}>
-        <form className="mx-auto ml-10 max-w-[80vw] pt-12 font-semibold md:w-1/2 lg:max-w-[100vw] lg:px-24">
+      <div className="flex lg:w-full lg:pt-24" onSubmit={handleSubmit}>
+        <form className="mx-auto w-full font-medium">
           {/* FIRST NAME */}
-          <label className="input input-bordered flex items-center gap-2">
+          <label className="input-lg mx-auto mb-4  mt-8 flex max-w-[70vw] flex-col p-0">
             First Name * :
             <input
               type="text"
               name="firstname"
               id="firstname"
               className="grow"
-              placeholder="John"
+              placeholder=" John"
               required
               value={user.firstname}
               onChange={handleInput}
@@ -152,12 +140,12 @@ const Contact = () => {
           </label>
 
           {/* LAST NAME */}
-          <label className="input input-bordered flex items-center gap-2">
+          <label className="input-lg mx-auto mb-4  mt-8 flex max-w-[70vw] flex-col p-0">
             Last Name :
             <input
               type="text"
               className="grow"
-              placeholder="Doe"
+              placeholder=" Doe"
               name="lastname"
               id="lastname"
               value={user.lastname}
@@ -166,12 +154,12 @@ const Contact = () => {
           </label>
 
           {/* AGE */}
-          <label className="input input-bordered flex items-center gap-2">
+          <label className="input-lg mx-auto mb-4  mt-8 flex max-w-[70vw] flex-col p-0">
             Age * :
             <input
               type="number"
               className="grow"
-              placeholder="30"
+              placeholder=" 30"
               min="0"
               max="110"
               required
@@ -183,10 +171,10 @@ const Contact = () => {
           </label>
 
           {/* GENDER */}
-          <label className="input input-bordered flex items-center md:gap-2">
+          <label className="input-lg mx-auto mb-2 mt-8 flex max-w-[70vw] flex-col p-0">
             Gender * :
             <div className="form-control">
-              <label className="label cursor-pointer">
+              <label className="label cursor-pointer leading-3">
                 <span className="px-1">Male </span>
                 <input
                   type="radio"
@@ -200,7 +188,7 @@ const Contact = () => {
               </label>
             </div>
             <div className="form-control">
-              <label className="label cursor-pointer">
+              <label className="label cursor-pointer leading-3">
                 <span className="px-1">Female </span>
                 <input
                   type="radio"
@@ -214,7 +202,7 @@ const Contact = () => {
               </label>
             </div>
             <div className="form-control">
-              <label className="label cursor-pointer">
+              <label className="label cursor-pointer leading-3">
                 <span className="px-1">Other </span>
                 <input
                   type="radio"
@@ -230,26 +218,26 @@ const Contact = () => {
           </label>
 
           {/* ADDRESS */}
-          <label className="input input-bordered flex items-center gap-2">
+          <label className="input-lg mx-auto mb-4  mt-28 flex max-w-[70vw] flex-col p-0">
             Address :
-            <input
+            <textarea
               type="text"
-              className="grow"
-              placeholder="123 Greenstone St."
+              className="textarea-md grow"
+              placeholder=" 123 Greenstone St."
               name="address"
               id="address"
               value={user.address}
               onChange={handleInput}
-            />
+            ></textarea>
           </label>
 
           {/* EMAIL */}
-          <label className="input input-bordered flex items-center gap-2">
+          <label className="input-lg mx-auto mb-4  mt-[3.5rem] flex max-w-[70vw] flex-col p-0">
             Email :
             <input
               type="email"
               className="grow"
-              placeholder="johndoe@test.com"
+              placeholder=" johndoe@example.com"
               name="email"
               id="email"
               value={user.email}
@@ -258,12 +246,12 @@ const Contact = () => {
           </label>
 
           {/* CONTACT NUMBER */}
-          <label className="input input-bordered flex items-center gap-2">
+          <label className="input-lg mx-auto mb-4  mt-8 flex max-w-[70vw] flex-col p-0">
             Contact Number * :
             <input
               type="number"
               className="grow"
-              placeholder="9998886666"
+              placeholder=" 9998886666"
               required
               name="phone"
               id="phone"
@@ -273,22 +261,22 @@ const Contact = () => {
           </label>
 
           {/* COMPLAINTS */}
-          <label className="input input-bordered flex items-center gap-2">
+          <label className="input-lg mx-auto mb-4  mt-8 flex max-w-[70vw] flex-col p-0">
             Complaints * :
-            <input
+            <textarea
               type="text"
-              className="grow"
-              placeholder="Fever and headache for 3 days"
+              className="textarea-md grow"
+              placeholder=" Fever and headache for 3 days"
               required
               name="complaints"
               id="complaints"
               value={user.complaints}
               onChange={handleInput}
-            />
+            ></textarea>
           </label>
 
           {/* INDICATES REQUIRED FIELDS */}
-          <p className="ml-6 mt-4 font-montserrat text-sm font-medium text-gray-500">
+          <p className="ml-6 mt-20 flex items-center justify-center font-montserrat text-sm font-medium text-gray-500 lg:mt-4">
             * Indicates required fields.
           </p>
 
@@ -298,8 +286,7 @@ const Contact = () => {
               type="submit"
               value="submit"
               // onClick={sucessNotify}
-              className="btn btn-md my-6 mb-20 ml-5 rounded-full px-12 transition duration-300 ease-in-out md:btn-wide lg:btn-lg hover:-translate-y-1 hover:scale-110 hover:bg-red-300 hover:text-white md:mb-28 lg:my-12"
-              // className="btn btn-md my-6 mb-20 ml-5 rounded-full px-12 md:btn-wide lg:btn-lg md:mb-28 lg:my-12"
+              className="btn btn-md my-6 ml-5 rounded-full px-12 transition duration-300 ease-in-out md:btn-wide lg:btn-lg hover:-translate-y-1 hover:scale-110 hover:bg-red-300 hover:text-white md:mb-28 lg:my-12"
             >
               SUBMIT
             </button>
@@ -308,13 +295,13 @@ const Contact = () => {
         </form>
 
         {/* IMAGE */}
-        <div className="relative -top-5 hidden scale-90 md:block md:w-1/2">
+        <div className="relative -top-5 hidden scale-90 lg:block lg:w-1/2">
           <img src={img2} alt="" className="lg:h-5/6 lg:object-contain" />
         </div>
       </div>
 
       {/* MAP INTEGRATION */}
-      <header className="mt-12 flex flex-col items-center justify-center pb-8 text-[2.2rem] font-semibold md:pb-16  lg:text-4xl ">
+      <header className="mt-12 flex flex-col items-center justify-center pb-8 text-[2.2rem] font-semibold md:pb-16 lg:mt-28 lg:text-4xl ">
         <div>
           Visit Us
           <div className="relative w-[22vw] border-t-[5px] border-red-300 md:w-[11vw] md:border-t-[6px] lg:w-[8vw]"></div>
@@ -348,4 +335,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactMobile;

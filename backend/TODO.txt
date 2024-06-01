@@ -69,9 +69,10 @@ removed curor pointer from copyright in footer ✅
 check cursor pointer for all buttons and footer links ✅
 contact us page should display numbers above the form ✅
 
+contact page responsiveness in mobile and change image too ✅
+
 see if you can add the warm body background
 make the website accessible
-contact page in mobile
 finish about-us
 don't make a services page rather make services a dropdown and those will be individual pages
 use alt palaquin or urbanist font along w montserrat or look up fonts that go well w montserrat

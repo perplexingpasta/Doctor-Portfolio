@@ -1,3 +1,4 @@
+import { useMediaQuery } from "react-responsive";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "../src/components/ScrollToTop";
 import Footer from "./components/Footer";
@@ -8,8 +9,11 @@ import Contact from "./pages/Contact/Contact";
 import FAQs from "./pages/FAQs/FAQs";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import PageNotFound from "./PageNotFound/PageNotFound";
+import ContactMobile from "./pages/Contact/ContactMobile";
 
 const App = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   return (
     <main className="relative flex min-h-screen flex-col">
       <BrowserRouter>
@@ -21,7 +25,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={isMobile ? <ContactMobile /> : <Contact />} />
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="*" element={<PageNotFound />} />
