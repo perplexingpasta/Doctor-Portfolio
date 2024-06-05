@@ -1,31 +1,12 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import logoWhite from "../assets/icons/cplogo-white.svg";
 import logoDark from "../assets/icons/cplogo-dark.svg";
 import hamburgerWhite from "../assets/icons/hamburger-white.svg";
 import hamburgerDark from "../assets/icons/hamburger-dark.svg";
 import closeWhite from "../assets/icons/close-white.svg";
 import closeDark from "../assets/icons/close-dark.svg";
 
-const Nav = () => {
-  // // DARK AND LIGHT MODE FUNCTIONALITY
-  // const [theme, setTheme] = useState(
-  //   localStorage.getItem("theme") ? localStorage.getItem("theme") : "light",
-  // );
-
-  // const handleLightDarkModeToggle = (e) => {
-  //   if (e.target.checked) {
-  //     setTheme("dark");
-  //   } else {
-  //     setTheme("light");
-  //   }
-  // };
-  // useEffect(() => {
-  //   localStorage.setItem("theme", theme);
-  //   const localTheme = localStorage.getItem("theme");
-  //   document.querySelector("html").setAttribute("data-theme", localTheme);
-  // }, [theme]);
-
+const Nav2 = () => {
   const [toggle, setToggle] = useState(false);
   const links = [
     {
@@ -67,24 +48,22 @@ const Nav = () => {
   }, []);
 
   return (
-    <header className={`padding-x absolute z-10 w-full ${show && "nav_black"}`}>
+    <header
+      className={`padding-x absolute z-10 w-full transition-all ${show && "overflow-hidden rounded-lg bg-gray-400 bg-opacity-0 bg-clip-padding backdrop-blur-lg backdrop-filter"}`}
+    >
       <nav className="max-container flex items-center justify-between">
         <a href="/" className="flex px-0 py-3">
           <img
-            src={show ? logoWhite : logoDark}
+            src={logoDark}
             alt="Dr. Robert Zane's Logo"
             className="mt-3 h-10 w-10 md:mt-5 md:h-16 md:w-16"
           />
 
-          <div
-            className={`px-5 font-montserrat text-gray-800 ${show && "text-slate-200"}`}
-          >
+          <div className="px-5 font-montserrat text-gray-800">
             <h1 className="mb-0 py-0 pt-3 text-xl font-semibold md:text-3xl">
               Dr. Robert Zane
             </h1>
-            <h1
-              className={`pb-3 font-montserrat text-[0.8rem] font-light text-gray-700 md:text-lg ${show && "text-slate-300"}`}
-            >
+            <h1 className="pb-3 font-montserrat text-[0.8rem] font-light text-gray-700 md:text-lg">
               Tumbleweed eye baby
             </h1>
           </div>
@@ -97,8 +76,8 @@ const Nav = () => {
                 to={item.href}
                 className={({ isActive }) =>
                   isActive
-                    ? `font-montserrat text-lg font-semibold text-gray-900 lg:text-xl ${show && "text-red-300"}`
-                    : `font-montserrat text-lg font-medium text-gray-700 transition-all hover:text-red-300 lg:text-xl ${show && "text-slate-300 hover:text-red-300"}`
+                    ? "font-montserrat text-lg font-semibold text-gray-900 lg:text-xl"
+                    : "font-montserrat text-lg font-medium text-gray-700 transition-all hover:text-red-300 lg:text-xl"
                 }
               >
                 {item.label}
@@ -106,44 +85,6 @@ const Nav = () => {
             </li>
           ))}
         </ul>
-
-        {/* DARK AND LIGHT MODE BUTTON 
-         <label className="flex cursor-pointer gap-2 pl-12">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <circle cx="12" cy="12" r="5" />
-            <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
-          </svg>
-          <input
-            type="checkbox"
-            // value="synthwave"
-            className="theme-controller toggle"
-            onChange={handleLightDarkModeToggle}
-            checked={theme === "light" ? false : true}
-          />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </label> */}
 
         {/* HAMBURGER FUNCTIONALITY */}
         <div className="flex flex-1 items-center justify-end lg:hidden">
@@ -191,4 +132,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Nav2;

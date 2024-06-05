@@ -8,7 +8,7 @@ const TestimonialsGoogle = () => {
         Some genuine feedback from our patients!
       </h1>
       <div
-        className="elfsight-app-e658837b-656c-45d4-bd29-21811c5eaade"
+        className="elfsight-app-e658837b-656c-45d4-bd29-21811c5eaade max-w-[90%] mx-auto"
         data-elfsight-app-lazy
       ></div>
     </div>

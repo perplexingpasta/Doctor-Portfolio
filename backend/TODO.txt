@@ -71,12 +71,18 @@ contact us page should display numbers above the form ✅
 
 contact page responsiveness in mobile and change image too ✅
 
+add transition-all class wherever you use hover ✅
+try glass dysmorphism for navbar ✅
+fixed google reviews width ✅
+
 see if you can add the warm body background
+mention the list of hospitals / nursing-homes that you are associated with
+
 make the website accessible
-finish about-us
+finish about-us and add proper experience
 don't make a services page rather make services a dropdown and those will be individual pages
 use alt palaquin or urbanist font along w montserrat or look up fonts that go well w montserrat
-// finish implementing dark mode
+optimize for local search engine results and do SEO
 
 
 __________________________________________________________________________________________________________________________________________________________________________________________
@@ -97,10 +103,11 @@ clinic logo
 for the carousel section, make sure all images are 1920x1080 or more but 16:9 basically and the hey or any text has good contrast against it
 seo optimisation
 give proper favicon
+ask for blog functionality?
 
 PAID SERVICES:
 domain
-hosting (can try on hostinger with JSM code)
+hosting (can try on hostinger with JSM code) - 4900 rupees for 12 months; domain included for 1 year
 elfsight to remove branding
 
 

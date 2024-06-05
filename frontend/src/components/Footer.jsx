@@ -40,7 +40,6 @@ const Footer = () => {
     <footer className="max-container">
       <div className="flex flex-wrap items-start justify-between gap-20 max-lg:flex-col">
         <div className="flex flex-col items-start">
-
           <a href="/" className="flex flex-1">
             <img src={logoWhite} alt="Footer Logo" width={60} height={46} />
             {/* USE LOGO FOR HEADER TEXT INSTEAD */}
@@ -70,7 +69,7 @@ const Footer = () => {
               <ul>
                 {section.links.map((item) => (
                   <li
-                    className="mt-3 cursor-pointer font-montserrat text-base leading-normal text-white-400 hover:text-red-300"
+                    className="mt-3 cursor-pointer font-montserrat text-base leading-normal text-white-400 transition-all hover:scale-110 hover:text-red-300"
                     key={item.label}
                   >
                     <NavLink to={item.href}>{item.label}</NavLink>
@@ -99,7 +98,7 @@ const Footer = () => {
           {socialMedia.map((icon) => (
             <div
               key={icon}
-              className="flex h-12 w-12 items-center justify-center rounded-full bg-red-300"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-red-300 transition-all hover:scale-110"
             >
               <a href={icon.href} target="_blank">
                 <img src={icon.src} alt={icon.alt} width={24} height={24} />

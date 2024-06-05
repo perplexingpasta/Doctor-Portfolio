@@ -10,7 +10,7 @@ import img6 from "../../assets/home/hero-carousel-images/imgLight6.jpg";
 import img7 from "../../assets/home/hero-carousel-images/imgLight7.jpg";
 import img8 from "../../assets/home/hero-carousel-images/imgLight8.jpg";
 import img9 from "../../assets/home/hero-carousel-images/imgLight9.jpg";
-import img10 from "../../assets/home/hero-carousel-images/imgLight10.jpg";
+// import img10 from "../../assets/home/hero-carousel-images/imgLight10.jpg";
 // import img1 from "../../assets/home/hero-carousel-images/imgDark1.jpg";
 // import img2 from "../../assets/home/hero-carousel-images/imgDark2.jpg";
 // import img3 from "../../assets/home/hero-carousel-images/imgDark3.jpg";
@@ -79,7 +79,7 @@ export function EmblaCarousel() {
           <HeroEmblaCard src={img7} />
           <HeroEmblaCard src={img8} />
           <HeroEmblaCard src={img9} />
-          <HeroEmblaCard src={img10} />
+          {/* <HeroEmblaCard src={img10} /> */}
         </div>
       </div>
     </>

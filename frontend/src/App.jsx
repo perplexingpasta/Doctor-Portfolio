@@ -2,7 +2,8 @@ import { useMediaQuery } from "react-responsive";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "../src/components/ScrollToTop";
 import Footer from "./components/Footer";
-import Nav from "./components/Nav";
+// import Nav from "./components/Nav";
+import Nav2 from "./components/Nav2";
 import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
 import Contact from "./pages/Contact/Contact";
@@ -19,7 +20,8 @@ const App = () => {
       <BrowserRouter>
         <ScrollToTop />
         <section className="fixed top-0 z-20 w-full">
-          <Nav />
+          {/* <Nav /> */}
+          <Nav2 />
         </section>
         <section className="flex-grow">
           <Routes>
